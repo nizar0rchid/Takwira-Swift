@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct userModel: Encodable {
+struct userModel: Encodable, Decodable {
     var _id: String? = nil
-    let firstName: String
-    let lastName: String
-    let email: String
-    let password: String
-    let age: Int
-    let phone: String
-    let location: String
-    let role: String
-    let token: String? = nil
+    var firstName: String?
+    var lastName: String?
+    var email: String?
+    var password: String?
+    var age: Int?
+    var phone: String?
+    var location: String?
+    var role: String?
+    var token: String? = nil
 }

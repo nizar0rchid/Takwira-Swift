@@ -23,22 +23,49 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "successfulRegister" {
+            let destination = segue.destination as! LoginViewController
+            destination.email = emailTF.text
+        }
+    }
     
     @IBAction func signupAction(_ sender: Any) {
-        let user = userModel(firstName: firstnameTF.text!, lastName: lastnameTF.text!, email: emailTF.text!, password: passwordTF.text!, age: 22, phone: phoneTF.text!, location: locationTF.text!, role: "user")
         
-        let status = APIFunctions.shareInstance.Register(user: user)
-        if status == 201{
-            self.showAlert(title: "Success", message: "User registred succcessfully")
-            performSegue(withIdentifier: "successfulRegister", sender: sender)
-        } else if status == 400 {
-            self.showAlert(title: "Missing info !", message: "Please make sure to fill all the form and try again")
-        } else if status == 409 {
-            self.showAlert(title: "User exists", message: "User already exists please login")
-            performSegue(withIdentifier: "successfulRegister", sender: sender)
+        let dateComponents = NSCalendar.current.dateComponents([.year], from: self.datepicker.date)
+        let birthYear = (dateComponents.year)
+        
+        let currentYear = Calendar.current.component(.year, from: Date())
+        
+        let age = currentYear - birthYear!
+
+
+        
+        
+        if confirmpasswordTF.text != passwordTF.text{
+            self.showAlert(title: "Error", message: "Passwords don't match, please verify and try again")
+        } else {
+            let user = userModel(firstName: firstnameTF.text!, lastName: lastnameTF.text!, email: emailTF.text!, password: passwordTF.text!, age: age, phone: phoneTF.text!, location: locationTF.text!, role: "user")
+            
+            let status = APIFunctions.shareInstance.Register(user: user)
+            
+            if status == 201{
+                
+                let alert = UIAlertController(title: "Success", message: "User registred succcessfully",preferredStyle: .alert)
+                let action = UIAlertAction(title:"ok", style: .cancel, handler: { action in self.performSegue(withIdentifier: "successfulRegister", sender: self) })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+                
+            } else if status == 400 {
+                self.showAlert(title: "Missing info !", message: "Please make sure to fill all the form and try again")
+            } else if status == 409 {
+                let alert = UIAlertController(title: "User exists", message: "User already exists please login",preferredStyle: .alert)
+                let action = UIAlertAction(title:"ok", style: .cancel, handler: { action in self.performSegue(withIdentifier: "successfulRegister", sender: self) })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
         }
+        
         
     
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		799B1B95274A8E89003A0C4E /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B94274A8E89003A0C4E /* NewsDetailsViewController.swift */; };
 		799B1B97274A8E9E003A0C4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B96274A8E9E003A0C4E /* ProfileViewController.swift */; };
 		799B1B99274A8EB7003A0C4E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */; };
-		799B1BA1274AB0F9003A0C4E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 799B1BA0274AB0F9003A0C4E /* Alamofire */; };
 		799B1BA3274AB141003A0C4E /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1BA2274AB141003A0C4E /* APIFunctions.swift */; };
 		799B1BA5274AB1C5003A0C4E /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1BA4274AB1C5003A0C4E /* userModel.swift */; };
 		79EDA809273ADD6500E97ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA808273ADD6500E97ABA /* AppDelegate.swift */; };
@@ -58,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799B1BA1274AB0F9003A0C4E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +155,6 @@
 			);
 			name = takwira;
 			packageProductDependencies = (
-				799B1BA0274AB0F9003A0C4E /* Alamofire */,
 			);
 			productName = takwira;
 			productReference = 79EDA805273ADD6500E97ABA /* takwira.app */;
@@ -187,7 +184,6 @@
 			);
 			mainGroup = 79EDA7FC273ADD6500E97ABA;
 			packageReferences = (
-				799B1B9F274AB0F9003A0C4E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 79EDA806273ADD6500E97ABA /* Products */;
 			projectDirPath = "";
@@ -431,25 +427,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		799B1B9F274AB0F9003A0C4E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		799B1BA0274AB0F9003A0C4E /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 799B1B9F274AB0F9003A0C4E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79EDA811273ADD6500E97ABA /* takwira.xcdatamodeld */ = {
