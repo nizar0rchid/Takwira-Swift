@@ -38,6 +38,18 @@ class ProfileViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "logoutSegue" {
+            UserDefaults.standard.removeObject(forKey: "email")
+            UserDefaults.standard.removeObject(forKey: "password")
+        }
+    }
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        
+        performSegue(withIdentifier: "logoutSegue", sender: self)
+
+    }
     
 
     

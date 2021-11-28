@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +83,10 @@
                             <constraint firstItem="M6x-q8-yHj" firstAttribute="top" secondItem="1jc-ZN-tCK" secondAttribute="bottom" constant="49" id="yaK-nO-dzb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hpQ-4s-eO1"/>
+                    <connections>
+                        <segue destination="cDc-1J-wqh" kind="show" identifier="remember" animates="NO" id="iYg-xv-Dhk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,7 +170,7 @@
         <!--Login View Controller-->
         <scene sceneID="STM-ai-GgM">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yE2-oP-ZLG" customClass="LoginViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signinvc" modalPresentationStyle="fullScreen" id="yE2-oP-ZLG" customClass="LoginViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gmJ-DR-7wW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,7 +462,7 @@
         <!--Match Details View Controller-->
         <scene sceneID="C63-tu-ZWE">
             <objects>
-                <viewController id="efb-lH-lQd" customClass="MatchDetailsViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="efb-lH-lQd" customClass="MatchDetailsViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIo-UA-lfW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -993,7 +997,7 @@
         <!--News Details View Controller-->
         <scene sceneID="BZ3-CJ-ZYU">
             <objects>
-                <viewController id="xf1-w1-k7x" customClass="NewsDetailsViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailsvc" id="xf1-w1-k7x" customClass="NewsDetailsViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MJn-M5-yRE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1059,6 +1063,12 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQv-WL-9ln">
+                                <rect key="frame" x="143" y="217" width="128" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YME-bF-nrN">
                                 <rect key="frame" x="20" y="307" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -1083,16 +1093,21 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQv-WL-9ln">
-                                <rect key="frame" x="143" y="217" width="128" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4M-dM-jTl">
+                                <rect key="frame" x="280" y="20" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log out" backgroundImage="Frame 3230">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="hbZ-Kl-lMf" eventType="touchUpInside" id="OUL-xB-gY0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5U-Sf-dmr"/>
                         <color key="backgroundColor" red="0.049689780490000002" green="0.050364965900000003" blue="0.072714266380000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="v4M-dM-jTl" firstAttribute="centerX" secondItem="hQw-ow-5ma" secondAttribute="centerX" constant="130" id="095-9j-I7z"/>
                             <constraint firstItem="lQv-WL-9ln" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YME-bF-nrN" secondAttribute="leading" id="0df-tq-dwd"/>
                             <constraint firstItem="pJU-AU-WRp" firstAttribute="leading" secondItem="UWE-1h-d7y" secondAttribute="leading" id="2KA-4E-72J"/>
                             <constraint firstItem="YME-bF-nrN" firstAttribute="trailing" secondItem="pJU-AU-WRp" secondAttribute="trailing" id="3mJ-js-qEB"/>
@@ -1111,12 +1126,14 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                             <constraint firstItem="YME-bF-nrN" firstAttribute="leading" secondItem="hQw-ow-5ma" secondAttribute="leadingMargin" id="eC9-lE-toU"/>
                             <constraint firstItem="YME-bF-nrN" firstAttribute="trailing" secondItem="lQv-WL-9ln" secondAttribute="trailing" constant="123" id="eVm-EK-Ol1"/>
                             <constraint firstItem="UWE-1h-d7y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pbb-Zd-5nA" secondAttribute="trailing" id="efT-sa-MIg"/>
+                            <constraint firstItem="v4M-dM-jTl" firstAttribute="leading" secondItem="P5U-Sf-dmr" secondAttribute="leading" constant="280" id="kEZ-cF-Wvr"/>
                             <constraint firstItem="pbb-Zd-5nA" firstAttribute="top" secondItem="UWE-1h-d7y" secondAttribute="bottom" constant="31" id="kZu-uA-fMN"/>
                             <constraint firstItem="e2t-AE-ytO" firstAttribute="centerX" secondItem="lQv-WL-9ln" secondAttribute="centerX" id="kep-k1-ZJj"/>
                             <constraint firstItem="lQv-WL-9ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YME-bF-nrN" secondAttribute="trailing" constant="-123" id="lp9-8l-U8B"/>
                             <constraint firstItem="lQv-WL-9ln" firstAttribute="top" secondItem="e2t-AE-ytO" secondAttribute="bottom" constant="23" id="luQ-6b-qSa"/>
                             <constraint firstItem="YME-bF-nrN" firstAttribute="top" secondItem="lQv-WL-9ln" secondAttribute="bottom" constant="53" id="qF7-db-Ps8"/>
                             <constraint firstItem="pbb-Zd-5nA" firstAttribute="centerX" secondItem="bsQ-xA-zKT" secondAttribute="centerX" id="qdf-3U-9MP"/>
+                            <constraint firstItem="v4M-dM-jTl" firstAttribute="top" secondItem="bsQ-xA-zKT" secondAttribute="bottom" constant="-670" id="sAu-fQ-h90"/>
                             <constraint firstItem="bsQ-xA-zKT" firstAttribute="top" secondItem="pbb-Zd-5nA" secondAttribute="bottom" constant="85" id="uqc-sx-4DQ"/>
                             <constraint firstItem="UWE-1h-d7y" firstAttribute="trailing" secondItem="lQv-WL-9ln" secondAttribute="trailing" constant="123" id="uw0-uK-A9b"/>
                         </constraints>
@@ -1129,6 +1146,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                         <outlet property="email" destination="YME-bF-nrN" id="mJK-gK-yu6"/>
                         <outlet property="fullname" destination="lQv-WL-9ln" id="aF6-HS-yhf"/>
                         <outlet property="phone" destination="UWE-1h-d7y" id="yJS-cd-YFn"/>
+                        <segue destination="yE2-oP-ZLG" kind="show" identifier="logoutSegue" id="wlf-cf-v2L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="268-A9-mzB" sceneMemberID="firstResponder"/>
@@ -1138,14 +1156,14 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
         <!--Tab Bar Controller-->
         <scene sceneID="EX2-Cx-B8w">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="cDc-1J-wqh" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="cDc-1J-wqh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="kDN-bR-BFb"/>
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6AC-T6-ive">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
@@ -1415,6 +1433,10 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ys2-7v-3Z0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1427,8 +1449,9 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sUr-Kn-awV"/>
-        <segue reference="fwg-7d-Bly"/>
+        <segue reference="iYg-xv-Dhk"/>
+        <segue reference="AnZ-Zx-hzI"/>
+        <segue reference="wlf-cf-v2L"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Frame 3230" width="115" height="46"/>

@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         emailTF.text = email
         // Do any additional setup after loading the view.
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,7 +45,8 @@ class LoginViewController: UIViewController {
             let user = APIFunctions.shareInstance.login(email: emailTF.text!, password: passwordTF.text!)
             
             if user._id != nil{
-                
+                UserDefaults.standard.set(emailTF.text!, forKey: "email")
+                UserDefaults.standard.set(passwordTF.text!, forKey: "password")
                 performSegue(withIdentifier: "SigninSegue", sender: self)
                 
             } else {
