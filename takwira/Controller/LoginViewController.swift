@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
             profileController.sentLocation = user.location!
             profileController.sentAge = user.age!
             
+            
         }
     }
     
@@ -46,7 +47,9 @@ class LoginViewController: UIViewController {
             
             if user._id != nil{
                 UserDefaults.standard.set(emailTF.text!, forKey: "email")
-                UserDefaults.standard.set(passwordTF.text!, forKey: "password")
+                UserDefaults.standard.set(passwordTF.text!, forKey: "plainpassword")
+                UserDefaults.standard.set(user.password!, forKey: "password")
+                UserDefaults.standard.set(user._id, forKey: "id")
                 performSegue(withIdentifier: "SigninSegue", sender: self)
                 
             } else {

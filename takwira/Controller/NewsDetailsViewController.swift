@@ -8,10 +8,47 @@
 import UIKit
 
 class NewsDetailsViewController: UIViewController {
-
+    
+    var sentHome: String?
+    var sentAway: String?
+    var sentElapsed: Int?
+    var sentElapsedplus: Int?
+    var sentCountry: String?
+    var sentLeague: String?
+    var sentVenue: String?
+    var sentHomegoals: Int?
+    var sentAwaygoals: Int?
+    
+    
+    @IBOutlet weak var home: UILabel!
+    @IBOutlet weak var away: UILabel!
+    @IBOutlet weak var homegoals: UILabel!
+    @IBOutlet weak var awaygoals: UILabel!
+    @IBOutlet weak var elapsed: UILabel!
+    @IBOutlet weak var elapsedplus: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var league: UILabel!
+    @IBOutlet weak var venue: UILabel!
+    
+    
+        
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        home.text = sentHome!
+        away.text = sentAway!
+        homegoals.text = String(sentHomegoals!)
+        awaygoals.text = String(sentAwaygoals!)
+        elapsed.text = String(sentElapsed!)
+        elapsedplus.text = String(sentElapsedplus!)
+        country.text = sentCountry!
+        league.text = sentLeague!
+        if sentVenue == nil {
+            venue.text = "Not available"
+        } else {
+            venue.text = sentVenue!
+        }
+        
         // Do any additional setup after loading the view.
     }
     

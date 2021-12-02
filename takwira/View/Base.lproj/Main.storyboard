@@ -901,94 +901,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="FAq-QV-j4K">
-                                <rect key="frame" x="0.0" y="93" width="414" height="51"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </searchBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SmV-72-K5g">
-                                <rect key="frame" x="364" y="56" width="30" height="25.000000000000007"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25.666666666666671" id="OJK-zN-yOP"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc0-Wp-YeX">
-                                <rect key="frame" x="20" y="166" width="116" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="GJg-Qp-7bS"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc0-Wp-YeX">
+                                <rect key="frame" x="20" y="54" width="177" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l7i-w7-Kwu">
-                                <rect key="frame" x="20" y="211" width="374" height="548"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l7i-w7-Kwu">
+                                <rect key="frame" x="20" y="117" width="374" height="642"/>
+                                <color key="backgroundColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="mXt-eI-rK0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="nCell" rowHeight="101" id="mXt-eI-rK0">
                                         <rect key="frame" x="0.0" y="24.333333969116211" width="374" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mXt-eI-rK0" id="qK8-8G-D2d">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="344.33333333333331" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3231" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-Kt-ZIi">
-                                                    <rect key="frame" x="0.0" y="-13" width="374" height="127"/>
+                                                    <rect key="frame" x="0.0" y="8" width="344.33333333333331" height="85"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group" translatesAutoresizingMaskIntoConstraints="NO" id="lVq-tV-3Pg">
-                                                    <rect key="frame" x="0.0" y="18.666666666666668" width="78" height="63.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tr8-HB-Hgh">
+                                                    <rect key="frame" x="20" y="24" width="69" height="53"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="78" id="hph-lC-cy1"/>
+                                                        <constraint firstAttribute="width" constant="69" id="md6-zt-k5D"/>
                                                     </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-Iq-j09">
-                                                    <rect key="frame" x="86" y="40" width="220" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team away" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5c-t1-OXw">
+                                                    <rect key="frame" x="215.33333333333334" y="24" width="81.000000000000028" height="53"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="81" id="JP4-4W-N5G"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kv-QI-IR7">
+                                                    <rect key="frame" x="129" y="22" width="62.333333333333343" height="53"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="G0E-Iq-j09" firstAttribute="centerY" secondItem="Mec-Kt-ZIi" secondAttribute="centerY" id="KYO-jg-EXb"/>
-                                                <constraint firstItem="Mec-Kt-ZIi" firstAttribute="leading" secondItem="lVq-tV-3Pg" secondAttribute="leading" id="LQb-pM-ecn"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="G0E-Iq-j09" secondAttribute="trailing" constant="48" id="Nhh-A8-kJv"/>
-                                                <constraint firstItem="G0E-Iq-j09" firstAttribute="centerY" secondItem="lVq-tV-3Pg" secondAttribute="centerY" id="RBF-ck-MzN"/>
-                                                <constraint firstAttribute="trailing" secondItem="Mec-Kt-ZIi" secondAttribute="trailing" id="fUt-Be-P1K"/>
-                                                <constraint firstItem="Mec-Kt-ZIi" firstAttribute="top" secondItem="qK8-8G-D2d" secondAttribute="topMargin" constant="-24" id="i3l-Dg-lN1"/>
-                                                <constraint firstItem="lVq-tV-3Pg" firstAttribute="top" secondItem="qK8-8G-D2d" secondAttribute="topMargin" constant="7.6666666666666714" id="oOC-t5-OOw"/>
-                                                <constraint firstItem="G0E-Iq-j09" firstAttribute="leading" secondItem="lVq-tV-3Pg" secondAttribute="trailing" constant="8" symbolic="YES" id="rOK-Bv-Zf3"/>
-                                                <constraint firstItem="G0E-Iq-j09" firstAttribute="centerY" secondItem="qK8-8G-D2d" secondAttribute="centerY" id="syg-9h-g0m"/>
-                                                <constraint firstItem="Mec-Kt-ZIi" firstAttribute="leading" secondItem="qK8-8G-D2d" secondAttribute="leading" id="w58-55-IQ1"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mec-Kt-ZIi" secondAttribute="trailing" id="A24-RW-X9y"/>
+                                                <constraint firstItem="tr8-HB-Hgh" firstAttribute="top" secondItem="qK8-8G-D2d" secondAttribute="topMargin" constant="13" id="Cbq-r6-BzR"/>
+                                                <constraint firstItem="tr8-HB-Hgh" firstAttribute="baseline" secondItem="G5c-t1-OXw" secondAttribute="baseline" id="IpV-1a-Xj6"/>
+                                                <constraint firstItem="Mec-Kt-ZIi" firstAttribute="top" secondItem="qK8-8G-D2d" secondAttribute="topMargin" constant="-3" id="KCR-D5-DfR"/>
+                                                <constraint firstItem="Mec-Kt-ZIi" firstAttribute="centerY" secondItem="qK8-8G-D2d" secondAttribute="centerY" id="UBP-nc-bYl"/>
+                                                <constraint firstItem="tr8-HB-Hgh" firstAttribute="firstBaseline" secondItem="G5c-t1-OXw" secondAttribute="firstBaseline" id="hbR-Np-rAr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5Kv-QI-IR7" secondAttribute="bottom" constant="15" id="kg7-D4-5aB"/>
+                                                <constraint firstItem="G5c-t1-OXw" firstAttribute="leading" secondItem="5Kv-QI-IR7" secondAttribute="trailing" constant="24" id="kiC-uH-tub"/>
+                                                <constraint firstItem="5Kv-QI-IR7" firstAttribute="leading" secondItem="tr8-HB-Hgh" secondAttribute="trailing" constant="40" id="ktu-Tv-Zpv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="G5c-t1-OXw" secondAttribute="trailing" constant="40" id="uji-AD-2Xe"/>
+                                                <constraint firstItem="5Kv-QI-IR7" firstAttribute="top" secondItem="qK8-8G-D2d" secondAttribute="topMargin" constant="11" id="vuU-SU-ZNz"/>
+                                                <constraint firstItem="tr8-HB-Hgh" firstAttribute="centerY" secondItem="Mec-Kt-ZIi" secondAttribute="centerY" id="vws-dz-xNN"/>
+                                                <constraint firstItem="Mec-Kt-ZIi" firstAttribute="leading" secondItem="qK8-8G-D2d" secondAttribute="leading" id="xJA-hc-Hkz"/>
+                                                <constraint firstItem="tr8-HB-Hgh" firstAttribute="leading" secondItem="qK8-8G-D2d" secondAttribute="leadingMargin" id="ydr-93-oAt"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="xf1-w1-k7x" kind="showDetail" id="KkB-AD-Abc"/>
-                                        </connections>
+                                        <color key="backgroundColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ffq-ws-DP9" id="VQh-Er-ylA"/>
+                                    <outlet property="delegate" destination="Ffq-ws-DP9" id="kOf-DC-zN0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NIk-vY-W4X"/>
                         <color key="backgroundColor" red="0.049689780490000002" green="0.050364965900000003" blue="0.072714266380000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SmV-72-K5g" firstAttribute="trailing" secondItem="abb-wN-06y" secondAttribute="trailingMargin" id="Alf-9a-Rmd"/>
-                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="trailing" secondItem="SmV-72-K5g" secondAttribute="trailing" id="Bmj-cW-qEd"/>
-                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="leading" secondItem="uc0-Wp-YeX" secondAttribute="leading" id="C6o-Mm-kHF"/>
-                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="bottom" secondItem="NIk-vY-W4X" secondAttribute="bottom" id="Cg6-WJ-PLs"/>
-                            <constraint firstItem="uc0-Wp-YeX" firstAttribute="leading" secondItem="abb-wN-06y" secondAttribute="leadingMargin" id="FeA-Lx-J53"/>
-                            <constraint firstItem="SmV-72-K5g" firstAttribute="leading" secondItem="NIk-vY-W4X" secondAttribute="leading" constant="364" id="Fho-2k-m2K"/>
-                            <constraint firstItem="SmV-72-K5g" firstAttribute="top" secondItem="NIk-vY-W4X" secondAttribute="top" constant="55.333333333333186" id="Fql-Ta-Ytz"/>
-                            <constraint firstItem="FAq-QV-j4K" firstAttribute="top" secondItem="SmV-72-K5g" secondAttribute="bottom" constant="12.000000000000142" id="K46-je-3cC"/>
-                            <constraint firstItem="uc0-Wp-YeX" firstAttribute="top" secondItem="FAq-QV-j4K" secondAttribute="bottom" constant="22" id="Vfe-ve-ADH"/>
-                            <constraint firstItem="FAq-QV-j4K" firstAttribute="leading" secondItem="NIk-vY-W4X" secondAttribute="leading" id="miU-dG-7Xl"/>
-                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="top" secondItem="uc0-Wp-YeX" secondAttribute="bottom" constant="8" symbolic="YES" id="uDA-no-Wc9"/>
-                            <constraint firstItem="FAq-QV-j4K" firstAttribute="centerX" secondItem="abb-wN-06y" secondAttribute="centerX" id="uaw-sz-zrH"/>
-                            <constraint firstItem="NIk-vY-W4X" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uc0-Wp-YeX" secondAttribute="trailing" symbolic="YES" id="zpZ-10-wQk"/>
+                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="top" secondItem="uc0-Wp-YeX" secondAttribute="bottom" constant="26" id="1vn-ZB-Btv"/>
+                            <constraint firstItem="uc0-Wp-YeX" firstAttribute="leading" secondItem="abb-wN-06y" secondAttribute="leadingMargin" id="Ucp-4b-aYC"/>
+                            <constraint firstItem="NIk-vY-W4X" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uc0-Wp-YeX" secondAttribute="trailing" symbolic="YES" id="ZPC-CA-RbG"/>
+                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="leading" secondItem="uc0-Wp-YeX" secondAttribute="leading" id="a0g-2b-dBM"/>
+                            <constraint firstItem="uc0-Wp-YeX" firstAttribute="top" secondItem="abb-wN-06y" secondAttribute="top" constant="54" id="dwP-2x-LeO"/>
+                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="bottom" secondItem="NIk-vY-W4X" secondAttribute="bottom" id="v6z-cb-fR5"/>
+                            <constraint firstItem="l7i-w7-Kwu" firstAttribute="trailing" secondItem="abb-wN-06y" secondAttribute="trailingMargin" id="xfE-B3-9gI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="N3f-O3-blW"/>
                     <navigationItem key="navigationItem" id="te3-zo-HiL"/>
+                    <connections>
+                        <outlet property="Tableview" destination="l7i-w7-Kwu" id="yP5-U6-qws"/>
+                        <segue destination="xf1-w1-k7x" kind="showDetail" identifier="livematchdetail" id="faB-9k-OZ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHO-Un-c0f" sceneMemberID="firstResponder"/>
             </objects>
@@ -1002,23 +1008,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arsenal" translatesAutoresizingMaskIntoConstraints="NO" id="o3k-LU-usd">
-                                <rect key="frame" x="6" y="33" width="403" height="379"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39z-3j-9kg">
-                                <rect key="frame" x="289" y="362" width="106" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Share" image="square.and.arrow.up" catalog="system">
-                                    <color key="titleShadowColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCm-Fq-P0L">
-                                <rect key="frame" x="20" y="420" width="374" height="388"/>
-                                <string key="text">Arsenal will have to grind it out against Aston Villa if they are to register  League wins. The match is scheduled for Sunday at the Emirates.
-The Gunners put forth a real statement of intent after their 1-0 win against Manchester United. Mikel Arteta's side had already surrendered points to Liverpool, Manchester City and ,,,,</string>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-JU-VtY">
+                                <rect key="frame" x="43.333333333333336" y="142" width="81.333333333333314" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" verticalHuggingPriority="251" text="team away" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-Dz-kps">
+                                <rect key="frame" x="285.33333333333331" y="142" width="108.66666666666669" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country :" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1p-QT-77Q">
+                                <rect key="frame" x="37.666666666666657" y="332" width="80" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXq-J6-LCi">
+                                <rect key="frame" x="203.33333333333334" y="142" width="7.3333333333333428" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMu-3F-U3b">
+                                <rect key="frame" x="132.66666666666666" y="140" width="69" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="7Ee-ki-lMe"/>
+                                    <constraint firstAttribute="width" constant="69" id="u5u-27-Yrc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-cY-FFl">
+                                <rect key="frame" x="210.66666666666666" y="140" width="68.999999999999972" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="Blc-8s-ICx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-t1-USw">
+                                <rect key="frame" x="196" y="193" width="22" height="56.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56.666666666666657" id="E8y-2H-Crm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League :" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zf-pk-AVp">
+                                <rect key="frame" x="13.000000000000007" y="434" width="104.66666666666669" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue : " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3e-om-kxC">
+                                <rect key="frame" x="49.666666666666657" y="529" width="68" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="league" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0z-bC-GsD">
+                                <rect key="frame" x="132.66666666666666" y="434" width="261.33333333333337" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-DN-cCr">
+                                <rect key="frame" x="132.66666666666666" y="332" width="261.33333333333337" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="LLC-iF-1nO"/>
+                                    <constraint firstAttribute="width" constant="261.33333333333337" id="apX-Rm-OBJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="venue" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-EI-9ic">
+                                <rect key="frame" x="132.66666666666666" y="529" width="261.33333333333337" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="5p9-s6-yyP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsx-z7-cp8">
+                                <rect key="frame" x="201.66666666666666" y="240.99999999999997" width="11" height="56.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1026,19 +1107,62 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                         <viewLayoutGuide key="safeArea" id="ypB-l3-3ja"/>
                         <color key="backgroundColor" red="0.049689780490000002" green="0.050364965900000003" blue="0.072714266380000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XCm-Fq-P0L" firstAttribute="top" secondItem="39z-3j-9kg" secondAttribute="bottom" constant="23" id="4dQ-F9-rav"/>
-                            <constraint firstItem="ypB-l3-3ja" firstAttribute="bottom" secondItem="XCm-Fq-P0L" secondAttribute="bottom" id="SDC-P3-mwa"/>
-                            <constraint firstItem="ypB-l3-3ja" firstAttribute="trailing" secondItem="39z-3j-9kg" secondAttribute="trailing" constant="19" id="Sbg-Td-HiS"/>
-                            <constraint firstItem="o3k-LU-usd" firstAttribute="leading" secondItem="ypB-l3-3ja" secondAttribute="leading" constant="6" id="VkQ-WK-tGS"/>
-                            <constraint firstItem="o3k-LU-usd" firstAttribute="top" secondItem="ypB-l3-3ja" secondAttribute="top" constant="33" id="XsZ-3C-Qc0"/>
-                            <constraint firstItem="XCm-Fq-P0L" firstAttribute="centerX" secondItem="o3k-LU-usd" secondAttribute="centerX" id="YXH-dI-1jc"/>
-                            <constraint firstItem="XCm-Fq-P0L" firstAttribute="leading" secondItem="MJn-M5-yRE" secondAttribute="leadingMargin" id="d6h-yL-hXr"/>
-                            <constraint firstItem="ypB-l3-3ja" firstAttribute="bottom" secondItem="o3k-LU-usd" secondAttribute="bottom" constant="396" id="fJ6-hL-Cn2"/>
-                            <constraint firstItem="ypB-l3-3ja" firstAttribute="bottom" secondItem="39z-3j-9kg" secondAttribute="bottom" constant="411" id="nX5-0Z-S2X"/>
-                            <constraint firstItem="39z-3j-9kg" firstAttribute="leading" secondItem="ypB-l3-3ja" secondAttribute="leading" constant="289" id="ns8-cF-fpj"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vaF-JU-VtY" secondAttribute="trailing" constant="8" symbolic="YES" id="0ks-BP-cNA"/>
+                            <constraint firstItem="1Zf-pk-AVp" firstAttribute="top" secondItem="M0z-bC-GsD" secondAttribute="top" id="14x-IK-kGu"/>
+                            <constraint firstItem="Ym6-EI-9ic" firstAttribute="top" secondItem="W3e-om-kxC" secondAttribute="top" id="19W-rX-MIP"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="centerX" secondItem="Nsx-z7-cp8" secondAttribute="centerX" id="3GR-IG-dju"/>
+                            <constraint firstItem="Ym6-EI-9ic" firstAttribute="bottom" secondItem="W3e-om-kxC" secondAttribute="bottom" id="3lF-3f-Pfw"/>
+                            <constraint firstItem="ymm-cY-FFl" firstAttribute="leading" secondItem="gMu-3F-U3b" secondAttribute="trailing" constant="8.9999999999999716" id="4SP-E2-bZ6"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="top" secondItem="ypB-l3-3ja" secondAttribute="top" constant="142" id="6AN-Ws-1M9"/>
+                            <constraint firstItem="Ym6-EI-9ic" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="W3e-om-kxC" secondAttribute="trailing" constant="8" symbolic="YES" id="75t-pc-4rT"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="centerX" secondItem="ukY-t1-USw" secondAttribute="centerX" id="7jp-Vo-OPv"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="leading" secondItem="Ym6-EI-9ic" secondAttribute="leading" id="7se-1l-sNg"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="top" secondItem="ukY-t1-USw" secondAttribute="bottom" constant="82.333333333333343" id="99r-LT-QMo"/>
+                            <constraint firstItem="ukY-t1-USw" firstAttribute="top" secondItem="ypB-l3-3ja" secondAttribute="top" constant="193" id="99y-iG-8b7"/>
+                            <constraint firstItem="1Zf-pk-AVp" firstAttribute="bottom" secondItem="M0z-bC-GsD" secondAttribute="bottom" id="A6V-H2-2jk"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="top" secondItem="ypB-l3-3ja" secondAttribute="top" constant="140" id="AQW-gz-YeB"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q1p-QT-77Q" secondAttribute="trailing" constant="8" symbolic="YES" id="BIK-a1-ZjS"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="leading" secondItem="M0z-bC-GsD" secondAttribute="leading" id="CjM-tb-1on"/>
+                            <constraint firstItem="ypB-l3-3ja" firstAttribute="trailing" secondItem="nyz-DN-cCr" secondAttribute="trailing" constant="19.999999999999943" id="GaW-qP-E1f"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="baseline" secondItem="dlG-Dz-kps" secondAttribute="baseline" id="H1d-9a-gW1"/>
+                            <constraint firstItem="Nsx-z7-cp8" firstAttribute="top" secondItem="gMu-3F-U3b" secondAttribute="bottom" constant="44" id="J7g-L1-bib"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="top" secondItem="Nsx-z7-cp8" secondAttribute="bottom" constant="34.333333333333371" id="JxC-4p-d1C"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="centerX" secondItem="MJn-M5-yRE" secondAttribute="centerX" id="LvS-8B-Ozo"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="trailing" secondItem="Ym6-EI-9ic" secondAttribute="trailing" id="NYZ-uP-k2D"/>
+                            <constraint firstItem="W3e-om-kxC" firstAttribute="leading" secondItem="ypB-l3-3ja" secondAttribute="leading" constant="49.666666666666657" id="Nvv-b5-dAz"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="trailing" secondItem="M0z-bC-GsD" secondAttribute="trailing" id="OGz-Xy-om9"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="bottom" secondItem="q1p-QT-77Q" secondAttribute="bottom" id="Rr4-un-YwA"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="top" secondItem="q1p-QT-77Q" secondAttribute="top" id="T3W-cl-4xv"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="baseline" secondItem="ymm-cY-FFl" secondAttribute="baseline" id="WM5-C3-EgJ"/>
+                            <constraint firstItem="dlG-Dz-kps" firstAttribute="leading" secondItem="ymm-cY-FFl" secondAttribute="trailing" constant="5.6666666666666288" id="Wld-oe-i4p"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="firstBaseline" secondItem="vaF-JU-VtY" secondAttribute="firstBaseline" id="X4c-dU-d9b"/>
+                            <constraint firstItem="M0z-bC-GsD" firstAttribute="top" secondItem="nyz-DN-cCr" secondAttribute="bottom" constant="49" id="ZVi-13-WvB"/>
+                            <constraint firstItem="vaF-JU-VtY" firstAttribute="leading" secondItem="ypB-l3-3ja" secondAttribute="leading" constant="43.333333333333336" id="avl-7d-Wj1"/>
+                            <constraint firstItem="ypB-l3-3ja" firstAttribute="bottom" secondItem="Ym6-EI-9ic" secondAttribute="bottom" constant="226" id="gct-MR-kpx"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="centerY" secondItem="dlG-Dz-kps" secondAttribute="centerY" id="hIa-Hw-rdu"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="leading" secondItem="MJn-M5-yRE" secondAttribute="leading" constant="132.66666666666666" id="hrv-d5-TZV"/>
+                            <constraint firstItem="Ym6-EI-9ic" firstAttribute="top" secondItem="M0z-bC-GsD" secondAttribute="bottom" constant="42" id="nbV-qx-dxc"/>
+                            <constraint firstItem="M0z-bC-GsD" firstAttribute="leading" secondItem="1Zf-pk-AVp" secondAttribute="trailing" constant="15" id="qb1-Jg-Kvl"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="centerY" secondItem="vaF-JU-VtY" secondAttribute="centerY" id="qi4-0o-PCL"/>
+                            <constraint firstItem="1Zf-pk-AVp" firstAttribute="leading" secondItem="ypB-l3-3ja" secondAttribute="leading" constant="13" id="ver-hy-Q0j"/>
+                            <constraint firstItem="gMu-3F-U3b" firstAttribute="firstBaseline" secondItem="ymm-cY-FFl" secondAttribute="firstBaseline" id="x34-gn-cnS"/>
+                            <constraint firstItem="dXq-J6-LCi" firstAttribute="baseline" secondItem="vaF-JU-VtY" secondAttribute="baseline" id="z2r-0F-hc0"/>
+                            <constraint firstItem="nyz-DN-cCr" firstAttribute="trailing" secondItem="dlG-Dz-kps" secondAttribute="trailing" id="zUw-8q-yGI"/>
+                            <constraint firstItem="q1p-QT-77Q" firstAttribute="leading" secondItem="ypB-l3-3ja" secondAttribute="leading" constant="37.666666666666657" id="zvA-JS-1Lc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ihW-r1-ak3"/>
+                    <connections>
+                        <outlet property="away" destination="dlG-Dz-kps" id="Hpa-ij-Jhe"/>
+                        <outlet property="awaygoals" destination="ymm-cY-FFl" id="UvZ-bU-zSg"/>
+                        <outlet property="country" destination="nyz-DN-cCr" id="ROD-c7-rhY"/>
+                        <outlet property="elapsed" destination="ukY-t1-USw" id="B0H-NE-r5w"/>
+                        <outlet property="elapsedplus" destination="Nsx-z7-cp8" id="uoP-fh-FcY"/>
+                        <outlet property="home" destination="vaF-JU-VtY" id="tNS-Ly-GTk"/>
+                        <outlet property="homegoals" destination="gMu-3F-U3b" id="cxB-Vz-0Ux"/>
+                        <outlet property="league" destination="M0z-bC-GsD" id="FNc-pq-82J"/>
+                        <outlet property="venue" destination="Ym6-EI-9ic" id="veP-Rn-gD4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYM-HD-M0j" sceneMemberID="firstResponder"/>
             </objects>
@@ -1047,54 +1171,57 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
         <!--Profile-->
         <scene sceneID="ZuH-kP-29O">
             <objects>
-                <viewController id="hbZ-Kl-lMf" customClass="ProfileViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hbZ-Kl-lMf" customClass="ProfileViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQw-ow-5ma">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="photo profile" translatesAutoresizingMaskIntoConstraints="NO" id="e2t-AE-ytO">
-                                <rect key="frame" x="-36" y="94" width="486" height="100"/>
+                                <rect key="frame" x="-36" y="138" width="486" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsQ-xA-zKT">
-                                <rect key="frame" x="120" y="627" width="174" height="63"/>
+                                <rect key="frame" x="120" y="671" width="174" height="122"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Edit your profile">
                                     <color key="titleColor" name="AccentColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="editprofileAction:" destination="hbZ-Kl-lMf" eventType="touchUpInside" id="X43-im-mwn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQv-WL-9ln">
-                                <rect key="frame" x="143" y="217" width="128" height="37"/>
+                                <rect key="frame" x="143" y="261" width="128" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YME-bF-nrN">
-                                <rect key="frame" x="20" y="307" width="374" height="37"/>
+                                <rect key="frame" x="20" y="351" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-AU-WRp">
-                                <rect key="frame" x="20" y="370" width="374" height="37"/>
+                                <rect key="frame" x="20" y="414" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWE-1h-d7y">
-                                <rect key="frame" x="20" y="437" width="374" height="37"/>
+                                <rect key="frame" x="20" y="481" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-Zd-5nA">
-                                <rect key="frame" x="20" y="505" width="374" height="37"/>
+                                <rect key="frame" x="20" y="549" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4M-dM-jTl">
-                                <rect key="frame" x="280" y="20" width="114" height="46"/>
+                                <rect key="frame" x="150" y="676" width="114" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log out" backgroundImage="Frame 3230">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1107,7 +1234,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                         <viewLayoutGuide key="safeArea" id="P5U-Sf-dmr"/>
                         <color key="backgroundColor" red="0.049689780490000002" green="0.050364965900000003" blue="0.072714266380000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="v4M-dM-jTl" firstAttribute="centerX" secondItem="hQw-ow-5ma" secondAttribute="centerX" constant="130" id="095-9j-I7z"/>
+                            <constraint firstItem="v4M-dM-jTl" firstAttribute="centerX" secondItem="hQw-ow-5ma" secondAttribute="centerX" id="095-9j-I7z"/>
                             <constraint firstItem="lQv-WL-9ln" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YME-bF-nrN" secondAttribute="leading" id="0df-tq-dwd"/>
                             <constraint firstItem="pJU-AU-WRp" firstAttribute="leading" secondItem="UWE-1h-d7y" secondAttribute="leading" id="2KA-4E-72J"/>
                             <constraint firstItem="YME-bF-nrN" firstAttribute="trailing" secondItem="pJU-AU-WRp" secondAttribute="trailing" id="3mJ-js-qEB"/>
@@ -1126,14 +1253,14 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                             <constraint firstItem="YME-bF-nrN" firstAttribute="leading" secondItem="hQw-ow-5ma" secondAttribute="leadingMargin" id="eC9-lE-toU"/>
                             <constraint firstItem="YME-bF-nrN" firstAttribute="trailing" secondItem="lQv-WL-9ln" secondAttribute="trailing" constant="123" id="eVm-EK-Ol1"/>
                             <constraint firstItem="UWE-1h-d7y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pbb-Zd-5nA" secondAttribute="trailing" id="efT-sa-MIg"/>
-                            <constraint firstItem="v4M-dM-jTl" firstAttribute="leading" secondItem="P5U-Sf-dmr" secondAttribute="leading" constant="280" id="kEZ-cF-Wvr"/>
+                            <constraint firstItem="v4M-dM-jTl" firstAttribute="leading" secondItem="P5U-Sf-dmr" secondAttribute="leading" constant="150" id="kEZ-cF-Wvr"/>
                             <constraint firstItem="pbb-Zd-5nA" firstAttribute="top" secondItem="UWE-1h-d7y" secondAttribute="bottom" constant="31" id="kZu-uA-fMN"/>
                             <constraint firstItem="e2t-AE-ytO" firstAttribute="centerX" secondItem="lQv-WL-9ln" secondAttribute="centerX" id="kep-k1-ZJj"/>
                             <constraint firstItem="lQv-WL-9ln" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YME-bF-nrN" secondAttribute="trailing" constant="-123" id="lp9-8l-U8B"/>
                             <constraint firstItem="lQv-WL-9ln" firstAttribute="top" secondItem="e2t-AE-ytO" secondAttribute="bottom" constant="23" id="luQ-6b-qSa"/>
                             <constraint firstItem="YME-bF-nrN" firstAttribute="top" secondItem="lQv-WL-9ln" secondAttribute="bottom" constant="53" id="qF7-db-Ps8"/>
                             <constraint firstItem="pbb-Zd-5nA" firstAttribute="centerX" secondItem="bsQ-xA-zKT" secondAttribute="centerX" id="qdf-3U-9MP"/>
-                            <constraint firstItem="v4M-dM-jTl" firstAttribute="top" secondItem="bsQ-xA-zKT" secondAttribute="bottom" constant="-670" id="sAu-fQ-h90"/>
+                            <constraint firstItem="v4M-dM-jTl" firstAttribute="top" secondItem="bsQ-xA-zKT" secondAttribute="bottom" constant="-117" id="sAu-fQ-h90"/>
                             <constraint firstItem="bsQ-xA-zKT" firstAttribute="top" secondItem="pbb-Zd-5nA" secondAttribute="bottom" constant="85" id="uqc-sx-4DQ"/>
                             <constraint firstItem="UWE-1h-d7y" firstAttribute="trailing" secondItem="lQv-WL-9ln" secondAttribute="trailing" constant="123" id="uw0-uK-A9b"/>
                         </constraints>
@@ -1147,6 +1274,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                         <outlet property="fullname" destination="lQv-WL-9ln" id="aF6-HS-yhf"/>
                         <outlet property="phone" destination="UWE-1h-d7y" id="yJS-cd-YFn"/>
                         <segue destination="yE2-oP-ZLG" kind="show" identifier="logoutSegue" id="wlf-cf-v2L"/>
+                        <segue destination="X4Y-d8-cQG" kind="show" identifier="editprofile" id="KcW-Yf-UgQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="268-A9-mzB" sceneMemberID="firstResponder"/>
@@ -1181,11 +1309,11 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
             <objects>
                 <viewController id="X4Y-d8-cQG" customClass="EditProfileViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nUt-06-8qv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J16-lb-Pni">
-                                <rect key="frame" x="27" y="152" width="360" height="34"/>
+                                <rect key="frame" x="27" y="108" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1196,7 +1324,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fkw-Pl-uyl">
-                                <rect key="frame" x="27" y="215" width="360" height="34"/>
+                                <rect key="frame" x="27" y="171" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1207,7 +1335,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XwS-y0-zM3">
-                                <rect key="frame" x="27" y="281" width="360" height="34"/>
+                                <rect key="frame" x="27" y="237" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1218,7 +1346,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-1g-x7C">
-                                <rect key="frame" x="27" y="345" width="360" height="34"/>
+                                <rect key="frame" x="27" y="301" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1229,7 +1357,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MtD-h3-4d4">
-                                <rect key="frame" x="27" y="405" width="360" height="34"/>
+                                <rect key="frame" x="27" y="361" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1240,7 +1368,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Of-1g-hPf">
-                                <rect key="frame" x="27" y="536" width="360" height="34"/>
+                                <rect key="frame" x="27" y="492" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1251,13 +1379,13 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthdate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqp-U8-3cV">
-                                <rect key="frame" x="27" y="447" width="109" height="68"/>
+                                <rect key="frame" x="27" y="403" width="109" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-IA-Cxa">
-                                <rect key="frame" x="27" y="608" width="360" height="34"/>
+                                <rect key="frame" x="27" y="564" width="360" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1268,7 +1396,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit your profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srj-le-gJT">
-                                <rect key="frame" x="70" y="64" width="277" height="67"/>
+                                <rect key="frame" x="70" y="20" width="277" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="ccR-Q0-qp6"/>
                                 </constraints>
@@ -1277,15 +1405,18 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzk-6n-BZ0">
-                                <rect key="frame" x="151" y="669" width="112" height="86"/>
+                                <rect key="frame" x="151" y="625" width="112" height="76"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Confim">
+                                <state key="normal" title="Confirm">
                                     <color key="titleColor" name="AccentColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAction:" destination="X4Y-d8-cQG" eventType="touchUpInside" id="SQC-kc-UP9"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xy-bu-dRm">
-                                <rect key="frame" x="130" y="463" width="240" height="36"/>
+                                <rect key="frame" x="130" y="419" width="240" height="36"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="iY5-ak-OVA"/>
@@ -1295,7 +1426,7 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <datePicker opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="S30-s4-mSe">
-                                <rect key="frame" x="124" y="453" width="255" height="56"/>
+                                <rect key="frame" x="124" y="409" width="255" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </datePicker>
@@ -1345,6 +1476,18 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wtj-VZ-x3L"/>
+                    <connections>
+                        <outlet property="confirmpasswordTF" destination="MtD-h3-4d4" id="P8U-92-6et"/>
+                        <outlet property="datepicker" destination="S30-s4-mSe" id="TPB-Ev-fyh"/>
+                        <outlet property="emailTF" destination="XwS-y0-zM3" id="L0c-Mk-iS7"/>
+                        <outlet property="firstnameTF" destination="J16-lb-Pni" id="zcX-CZ-ctx"/>
+                        <outlet property="lastnameTF" destination="fkw-Pl-uyl" id="t8i-rm-Ek2"/>
+                        <outlet property="locationTF" destination="RR6-IA-Cxa" id="M4H-kU-P4r"/>
+                        <outlet property="passwordTF" destination="eoZ-1g-x7C" id="4qY-DP-gJ3"/>
+                        <outlet property="phoneTF" destination="7Of-1g-hPf" id="Src-cS-tbQ"/>
+                        <segue destination="hbZ-Kl-lMf" kind="show" identifier="backtoprofile" id="Ynf-51-uGD"/>
+                        <segue destination="yE2-oP-ZLG" kind="show" identifier="logoutafterupdate" id="O4D-Q0-lY0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iER-ZR-iXE" sceneMemberID="firstResponder"/>
             </objects>
@@ -1450,14 +1593,13 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="iYg-xv-Dhk"/>
+        <segue reference="Ynf-51-uGD"/>
         <segue reference="AnZ-Zx-hzI"/>
-        <segue reference="wlf-cf-v2L"/>
+        <segue reference="O4D-Q0-lY0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Frame 3230" width="115" height="46"/>
         <image name="Group 3231" width="319" height="68"/>
-        <image name="Mask Group" width="64" height="64"/>
-        <image name="arsenal" width="375" height="342"/>
         <image name="banner-1" width="319" height="177"/>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="house" catalog="system" width="128" height="106"/>
@@ -1466,7 +1608,6 @@ The Gunners put forth a real statement of intent after their 1-0 win against Man
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="photo profile" width="100" height="100"/>
         <image name="splash screen" width="291" height="339"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

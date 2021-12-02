@@ -8,7 +8,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    
+   
     var sentName : String?
     var sentEmail : String?
     var sentAge : Int?
@@ -36,6 +37,7 @@ class ProfileViewController: UIViewController {
         address.text = sentLocation!
         
         
+        
         // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,6 +54,9 @@ class ProfileViewController: UIViewController {
     }
     
 
+    @IBAction func editprofileAction(_ sender: Any) {
+        performSegue(withIdentifier: "editprofile", sender: self)
+    }
     
 
 }

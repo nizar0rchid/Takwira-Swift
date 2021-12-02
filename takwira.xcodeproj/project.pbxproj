@@ -19,6 +19,7 @@
 		799B1B99274A8EB7003A0C4E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */; };
 		799B1BA3274AB141003A0C4E /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1BA2274AB141003A0C4E /* APIFunctions.swift */; };
 		799B1BA5274AB1C5003A0C4E /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1BA4274AB1C5003A0C4E /* userModel.swift */; };
+		79A4B5A92753D23000220081 /* liveMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A4B5A82753D23000220081 /* liveMatchModel.swift */; };
 		79EDA809273ADD6500E97ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA808273ADD6500E97ABA /* AppDelegate.swift */; };
 		79EDA80B273ADD6500E97ABA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA80A273ADD6500E97ABA /* SceneDelegate.swift */; };
 		79EDA80D273ADD6500E97ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA80C273ADD6500E97ABA /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		799B1BA2274AB141003A0C4E /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctions.swift; path = takwira/Controller/APIFunctions.swift; sourceTree = SOURCE_ROOT; };
 		799B1BA4274AB1C5003A0C4E /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = userModel.swift; path = takwira/Controller/userModel.swift; sourceTree = SOURCE_ROOT; };
+		79A4B5A82753D23000220081 /* liveMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = liveMatchModel.swift; path = takwira/Controller/liveMatchModel.swift; sourceTree = SOURCE_ROOT; };
 		79EDA805273ADD6500E97ABA /* takwira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takwira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EDA808273ADD6500E97ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79EDA80A273ADD6500E97ABA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				799B1BA4274AB1C5003A0C4E /* userModel.swift */,
+				79A4B5A82753D23000220081 /* liveMatchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A4B5A92753D23000220081 /* liveMatchModel.swift in Sources */,
 				799B1B95274A8E89003A0C4E /* NewsDetailsViewController.swift in Sources */,
 				79EDA80D273ADD6500E97ABA /* ViewController.swift in Sources */,
 				79EDA809273ADD6500E97ABA /* AppDelegate.swift in Sources */,

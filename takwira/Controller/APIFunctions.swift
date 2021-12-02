@@ -90,5 +90,108 @@ class APIFunctions {
         return user
     }
     
+    //// update profile
+    func updateProfile(_id : String, firstname: String, lastname: String, email: String, age: Int, phone: String, location: String, password: String, role : String) {
+        var semaphore = DispatchSemaphore (value: 0)
+        
+        let param1 = "firstName="+firstname+"&lastName="+lastname+"&email="+email
+        let param2 = "&password="+password+"&age="+String(age)
+        let param3 = "&phone="+phone+"&location="+location+"&role="+role
+        let parameters = param1+param2+param3
+        
+        
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/users/"+_id)!,timeoutInterval: Double.infinity)
+        request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+
+        request.httpMethod = "PUT"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+          print(String(data: data, encoding: .utf8)!)
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+    }
+ 
+    ///// get live matches
+    func liveMatches() -> Array<liveMatchModel> {
+        var matches = [liveMatchModel]()
+        var semaphore = DispatchSemaphore (value: 0)
+
+        let parameters = ""
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/live/")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+            do {
+                matches = try JSONDecoder().decode(Array<liveMatchModel>.self, from: data)
+                //print(matches)
+                
+                
+            } catch let err {
+                print(err)
+            }
+          //print(String(data: data, encoding: .utf8)!)
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+        return matches
+    }
     
+    
+    func finduserbyid(id : String) -> userModel {
+        var semaphore = DispatchSemaphore (value: 0)
+        var user = userModel()
+        let parameters = ""
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/users/"+id)!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+            
+            do {
+                user = try JSONDecoder().decode(userModel.self, from: data)
+                //print(user._id)
+                
+            } catch let err {
+                print(err)
+            }
+            
+          print(String(data: data, encoding: .utf8)!)
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+        return user
+    }
+    
+    
+        
 }

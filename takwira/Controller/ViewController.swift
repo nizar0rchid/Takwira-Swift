@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     
 var username = UserDefaults.standard.value(forKey: "email")
-var password = UserDefaults.standard.value(forKey: "password")
+var password = UserDefaults.standard.value(forKey: "plainpassword")
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
