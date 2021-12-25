@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79087E592774B0CF00AC1BA3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 79087E582774B0CF00AC1BA3 /* Alamofire */; };
+		79087E5B2774B0CF00AC1BA3 /* ProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */; };
 		799B1B87274A8D67003A0C4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B86274A8D67003A0C4E /* LoginViewController.swift */; };
 		799B1B89274A8DA4003A0C4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B88274A8DA4003A0C4E /* RegisterViewController.swift */; };
 		799B1B8B274A8DC0003A0C4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B8A274A8DC0003A0C4E /* HomeViewController.swift */; };
@@ -27,9 +29,11 @@
 		79EDA813273ADD6500E97ABA /* takwira.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA811273ADD6500E97ABA /* takwira.xcdatamodeld */; };
 		79EDA815273ADD6600E97ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EDA814273ADD6600E97ABA /* Assets.xcassets */; };
 		79EDA818273ADD6600E97ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79EDA816273ADD6600E97ABA /* LaunchScreen.storyboard */; };
+		79FB584627775D1000C9889B /* ChangeProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicViewController.swift; sourceTree = "<group>"; };
 		799B1B86274A8D67003A0C4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		799B1B88274A8DA4003A0C4E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		799B1B8A274A8DC0003A0C4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 		79EDA814273ADD6600E97ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79EDA817273ADD6600E97ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79EDA819273ADD6600E97ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfilePictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79087E592774B0CF00AC1BA3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 				799B1B94274A8E89003A0C4E /* NewsDetailsViewController.swift */,
 				799B1B96274A8E9E003A0C4E /* ProfileViewController.swift */,
 				799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */,
+				79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */,
+				79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			);
 			name = takwira;
 			packageProductDependencies = (
+				79087E582774B0CF00AC1BA3 /* Alamofire */,
 			);
 			productName = takwira;
 			productReference = 79EDA805273ADD6500E97ABA /* takwira.app */;
@@ -187,6 +196,7 @@
 			);
 			mainGroup = 79EDA7FC273ADD6500E97ABA;
 			packageReferences = (
+				79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 79EDA806273ADD6500E97ABA /* Products */;
 			projectDirPath = "";
@@ -219,6 +229,7 @@
 				799B1B95274A8E89003A0C4E /* NewsDetailsViewController.swift in Sources */,
 				79EDA80D273ADD6500E97ABA /* ViewController.swift in Sources */,
 				79EDA809273ADD6500E97ABA /* AppDelegate.swift in Sources */,
+				79FB584627775D1000C9889B /* ChangeProfilePictureViewController.swift in Sources */,
 				799B1B91274A8E41003A0C4E /* Lineup2ViewController.swift in Sources */,
 				799B1BA3274AB141003A0C4E /* APIFunctions.swift in Sources */,
 				799B1B8D274A8DF7003A0C4E /* MatchDetailsViewController.swift in Sources */,
@@ -226,6 +237,7 @@
 				799B1B99274A8EB7003A0C4E /* EditProfileViewController.swift in Sources */,
 				79EDA80B273ADD6500E97ABA /* SceneDelegate.swift in Sources */,
 				799B1B89274A8DA4003A0C4E /* RegisterViewController.swift in Sources */,
+				79087E5B2774B0CF00AC1BA3 /* ProfilePicViewController.swift in Sources */,
 				799B1BA5274AB1C5003A0C4E /* userModel.swift in Sources */,
 				799B1B87274A8D67003A0C4E /* LoginViewController.swift in Sources */,
 				799B1B8B274A8DC0003A0C4E /* HomeViewController.swift in Sources */,
@@ -431,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79087E582774B0CF00AC1BA3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79EDA811273ADD6500E97ABA /* takwira.xcdatamodeld */ = {

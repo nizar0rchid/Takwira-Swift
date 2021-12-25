@@ -52,7 +52,7 @@ class EditProfileViewController: UIViewController {
             destination.sentPhone = newphone!
             destination.sentLocation = newlocation!
             
-        }
+        } 
     }
     
     
@@ -75,8 +75,12 @@ class EditProfileViewController: UIViewController {
         newUser.phone = phoneTF.text!
         newUser.location = locationTF.text!
         
+        let email = UserDefaults.standard.value(forKey: "email") as! String?
+        
+        let user = APIFunctions.shareInstance.login(email: email!, password: passwordTF.text!)
+        
         if confirmpasswordTF.text == passwordTF.text {
-            if passwordTF.text! == UserDefaults.standard.string(forKey: "plainpassword"){
+            if user._id != nil{
                 
                 if newUser.firstName == oldUser.firstName && newUser.lastName == oldUser.lastName && newUser.email == oldUser.email && newUser.age == oldUser.age && newUser.phone == oldUser.phone && newUser.location == oldUser.location {
                     let alert = UIAlertController(title: "Warning", message: "No new info registred",preferredStyle: .alert)
@@ -96,7 +100,7 @@ class EditProfileViewController: UIViewController {
                     APIFunctions.shareInstance.updateProfile(_id: userid, firstname: newUser.firstName!, lastname: newUser.lastName!, email: newUser.email!, age: newUser.age!, phone: newUser.phone!, location: newUser.location!, password: UserDefaults.standard.string(forKey: "password")!, role: oldUser.role!)
                     
                     UserDefaults.standard.removeObject(forKey: "email")
-                    UserDefaults.standard.removeObject(forKey: "password")
+                    
                     UserDefaults.standard.removeObject(forKey: "id")
                     let alert = UIAlertController(title: "Success", message: "Info updated successfully, please login again",preferredStyle: .alert)
                     let action = UIAlertAction(title:"ok", style: .cancel, handler: { action in self.performSegue(withIdentifier: "logoutafterupdate", sender: self) })
@@ -124,5 +128,5 @@ class EditProfileViewController: UIViewController {
     }
     
    
-
+  
 }

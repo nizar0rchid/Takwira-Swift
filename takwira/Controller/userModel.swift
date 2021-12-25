@@ -18,4 +18,5 @@ struct userModel: Encodable, Decodable {
     var location: String?
     var role: String?
     var token: String? = nil
+    var profilePic: String? = nil
 }

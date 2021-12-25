@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     
-var username = UserDefaults.standard.value(forKey: "email")
-var password = UserDefaults.standard.value(forKey: "plainpassword")
+
+    var id = UserDefaults.standard.value(forKey: "id") as! String?
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,7 +30,7 @@ var password = UserDefaults.standard.value(forKey: "plainpassword")
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if username != nil || password != nil {
+        if id != nil {
             performSegue(withIdentifier: "remember", sender: self)
         }
     }
@@ -42,7 +42,7 @@ var password = UserDefaults.standard.value(forKey: "plainpassword")
     
     
     func getUser() -> userModel {
-        let user = APIFunctions.shareInstance.login(email: username as! String , password: password as! String)
+        let user = APIFunctions.shareInstance.finduserbyid(id: id!)
         return user
     }
 }

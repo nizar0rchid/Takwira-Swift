@@ -27,6 +27,9 @@ class RegisterViewController: UIViewController {
         if segue.identifier == "successfulRegister" {
             let destination = segue.destination as! LoginViewController
             destination.email = emailTF.text
+        } else if segue.identifier == "profilepic" {
+            let destination = segue.destination as! ProfilePicViewController
+            destination.email = emailTF.text
         }
     }
     
@@ -52,7 +55,7 @@ class RegisterViewController: UIViewController {
             if status == 201{
                 
                 let alert = UIAlertController(title: "Success", message: "User registred succcessfully",preferredStyle: .alert)
-                let action = UIAlertAction(title:"ok", style: .cancel, handler: { action in self.performSegue(withIdentifier: "successfulRegister", sender: self) })
+                let action = UIAlertAction(title:"ok", style: .cancel, handler: { action in self.performSegue(withIdentifier: "profilepic", sender: self) })
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)
                 
@@ -77,10 +80,8 @@ class RegisterViewController: UIViewController {
     }
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

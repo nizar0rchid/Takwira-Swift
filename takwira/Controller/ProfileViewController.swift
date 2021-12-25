@@ -36,14 +36,28 @@ class ProfileViewController: UIViewController {
         phone.text = sentPhone!
         address.text = sentLocation!
         
+        let userid = UserDefaults.standard.value(forKey: "id") as! String?
+        let user = APIFunctions.shareInstance.finduserbyid(id: userid!)
+        let imagepath = user.profilePic!
+        let image = imagepath.components(separatedBy: "upload\\images\\")[1]
+        print(image)
         
+        let url = URL(string: "http://192.168.1.9:3000/"+image)
+        let data = try? Data(contentsOf: url!)
+
+        if let imageData = data {
+            let image = UIImage(data: imageData)
+            profilepic.image = image
+        }
         
         // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "logoutSegue" {
-            UserDefaults.standard.removeObject(forKey: "email")
-            UserDefaults.standard.removeObject(forKey: "password")
+            
+            UserDefaults.standard.removeObject(forKey: "id")
+        } else if segue.identifier == "changepic" {
+            let destination = segue.destination as! ChangeProfilePictureViewController
         }
     }
     
@@ -58,5 +72,13 @@ class ProfileViewController: UIViewController {
         performSegue(withIdentifier: "editprofile", sender: self)
     }
     
-
+    @IBOutlet weak var profilepic: UIImageView!
+    
+    
+    
+    
+    @IBAction func changepic(_ sender: Any) {
+        performSegue(withIdentifier: "changepic", sender: self)
+    }
+    
 }

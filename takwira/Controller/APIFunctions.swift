@@ -6,13 +6,15 @@
 //
 
 import Foundation
+import Alamofire
+import UIKit.UIImage
 #if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
 
 class APIFunctions {
     static let shareInstance = APIFunctions()
-    let url: String = "192.168.1.7";
+    let url: String = "192.168.1.9";
     ///// REGISTER
     func Register(user : userModel) -> Int{
         
@@ -193,5 +195,81 @@ class APIFunctions {
     }
     
     
+    
+    func findbyemail(email : String) -> userModel {
         
+        var semaphore = DispatchSemaphore (value: 0)
+        var user = userModel()
+        let parameters = ""
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/find/"+email)!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+            do {
+                user = try JSONDecoder().decode(userModel.self, from: data)
+                //print(user._id)
+                
+            } catch let err {
+                print(err)
+            }
+          print(String(data: data, encoding: .utf8)!)
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+        return user
+    }
+    
+    
+    
+    func image(id: String,photo: UIImage, completion: @escaping (_ error: Error?, _ success: Bool)->Void ){
+        
+        let link="http://"+url+":3000/api/users/"+id
+        
+        AF.upload(multipartFormData: { (form: MultipartFormData) in
+            
+            if let data = photo.jpegData(compressionQuality: 0.5) {
+                form.append(data, withName: "image", fileName: "image.jpeg", mimeType: "image/jpeg")
+            }
+            
+            
+            
+        }, to: link, usingThreshold: MultipartFormData.encodingMemoryThreshold, method: .put, headers: nil)
+        .validate(statusCode: 200..<300)
+        .validate(contentType: ["application/json"])
+        .responseData { response in
+            switch response.result {
+            case .success:
+                print("Success")
+                completion(nil,true)
+            case let .failure(error):
+                completion(nil,false)
+                print(error)
+            }
+        }
+    }
+    
+    
+   
+        
+        
+    
+
+
+
 }
+        
+        
+    
+
+
+

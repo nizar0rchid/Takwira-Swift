@@ -46,10 +46,10 @@ class LoginViewController: UIViewController {
             let user = APIFunctions.shareInstance.login(email: emailTF.text!, password: passwordTF.text!)
             
             if user._id != nil{
-                UserDefaults.standard.set(emailTF.text!, forKey: "email")
-                UserDefaults.standard.set(passwordTF.text!, forKey: "plainpassword")
-                UserDefaults.standard.set(user.password!, forKey: "password")
                 UserDefaults.standard.set(user._id, forKey: "id")
+                UserDefaults.standard.set(user.email, forKey: "email")
+                UserDefaults.standard.set(user.password, forKey: "password")
+                UserDefaults.standard.set(passwordTF.text, forKey: "plainpassword")
                 performSegue(withIdentifier: "SigninSegue", sender: self)
                 
             } else {
