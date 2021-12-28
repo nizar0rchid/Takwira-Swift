@@ -103,8 +103,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UmH-e5-JEe">
                                 <rect key="frame" x="20" y="297" width="374" height="437"/>
                                 <color key="backgroundColor" red="0.13343331219999999" green="0.13585084680000001" blue="0.1962443888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexTrackingBackgroundColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.13343331219999999" green="0.13585084680000001" blue="0.1962443888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.13343331219999999" green="0.13585084680000001" blue="0.1962443888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.13343331219999999" green="0.13585084680000001" blue="0.1962443888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="nCell" rowHeight="101" id="mek-VL-bxj">
                                         <rect key="frame" x="0.0" y="24.333333969116211" width="374" height="101"/>
