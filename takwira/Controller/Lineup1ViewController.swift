@@ -99,6 +99,10 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
                 joinbutton.setTitle("Join match", for: .normal)
             }
         }
+        let teamchoice = checkuserteam()
+        if teamchoice == "teamB" {
+            joinbutton.isHidden = true
+        }
     }
     
     
@@ -143,6 +147,8 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
             destination.sentdate = date.text!
             destination.sentnametitle = nametitle.text!
             destination.sentmatch = match
+            let teamchoice = checkuserteam()
+            destination.sentteamchoice = teamchoice
             
         }
     }
@@ -152,6 +158,30 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-    
+    func checkuserteam() -> String {
+        let match = MatchAPI.shareInstance.findmatchwithstadeid(stadeid: sentstadeid!)
+        let team1 = match.teamA!
+        let team2 = match.teamB!
+        let filtered2 = team2.compactMap { $0 }
+        let filtered1 = team1.compactMap { $0 }
+        let userid = UserDefaults.standard.value(forKey: "id") as! String?
+        
+        for id in filtered1 {
+            if id == userid {
+                return "teamA"
+            } else {
+                return "not team A"
+            }
+            
+        }
+        for id in filtered2 {
+            if id == userid {
+                return "teamB"
+            } else {
+                return "not team B"
+            }
+        }
+        return ""
+    }
 
 }

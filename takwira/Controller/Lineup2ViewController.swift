@@ -13,7 +13,7 @@ class Lineup2ViewController: UIViewController, UITableViewDelegate, UITableViewD
     var sentdate: String?
     var sentnametitle: String?
     var sentmatch: MatchModel?
-    
+    var sentteamchoice: String?
     
     @IBOutlet weak var nametitle: UILabel!
     
@@ -93,6 +93,9 @@ class Lineup2ViewController: UIViewController, UITableViewDelegate, UITableViewD
                 joinbutton.setTitle("Join match", for: .normal)
             }
         }
+        if sentteamchoice! == "teamA" {
+            joinbutton.isHidden = true
+        }
     }
     
 
@@ -134,6 +137,8 @@ class Lineup2ViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         
     }
+    
+    
     
 
 }
