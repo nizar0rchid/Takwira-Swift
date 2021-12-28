@@ -70,7 +70,7 @@ class ChangeProfilePictureViewController: UIViewController, UIImagePickerControl
                 self.present(alert, animated: true, completion: nil)
             }
         }
-}
+    } 
 
     
 

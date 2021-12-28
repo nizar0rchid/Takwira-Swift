@@ -14,7 +14,7 @@ import FoundationNetworking
 
 class APIFunctions {
     static let shareInstance = APIFunctions()
-    let url: String = "192.168.1.9";
+    let url: String = "192.168.1.17";
     ///// REGISTER
     func Register(user : userModel) -> Int{
         
@@ -185,7 +185,7 @@ class APIFunctions {
                 print(err)
             }
             
-          print(String(data: data, encoding: .utf8)!)
+          
           semaphore.signal()
         }
 

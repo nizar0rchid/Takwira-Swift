@@ -40,9 +40,9 @@ class ProfileViewController: UIViewController {
         let user = APIFunctions.shareInstance.finduserbyid(id: userid!)
         let imagepath = user.profilePic!
         let image = imagepath.components(separatedBy: "upload\\images\\")[1]
-        print(image)
         
-        let url = URL(string: "http://192.168.1.9:3000/"+image)
+        
+        let url = URL(string: "http://192.168.1.17:3000/"+image)
         let data = try? Data(contentsOf: url!)
 
         if let imageData = data {
@@ -72,9 +72,10 @@ class ProfileViewController: UIViewController {
         performSegue(withIdentifier: "editprofile", sender: self)
     }
     
+    
+    
+    
     @IBOutlet weak var profilepic: UIImageView!
-    
-    
     
     
     @IBAction func changepic(_ sender: Any) {

@@ -56,8 +56,7 @@ class ProfilePicViewController: UIViewController, UIImagePickerControllerDelegat
         let user = APIFunctions.shareInstance.findbyemail(email: email!)
         let id = user._id
         
-        self.spinner.isHidden = false
-        self.spinner.startAnimating()
+        
         
         APIFunctions.shareInstance.image(id: id!, photo: picker_image!) { error, success in
             if success {
