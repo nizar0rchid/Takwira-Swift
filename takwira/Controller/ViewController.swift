@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     var id = UserDefaults.standard.value(forKey: "id") as! String?
     
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "remember" {
+            
             let user = getUser()
             
             let custMainVC = segue.destination as! UITabBarController
@@ -30,8 +32,11 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         if id != nil {
+            
             performSegue(withIdentifier: "remember", sender: self)
+            
         }
     }
     override func viewDidLoad() {

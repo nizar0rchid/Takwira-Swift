@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		79087E592774B0CF00AC1BA3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 79087E582774B0CF00AC1BA3 /* Alamofire */; };
 		79087E5B2774B0CF00AC1BA3 /* ProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */; };
+		7910FB86277BD891008E452E /* MyMacthesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910FB85277BD891008E452E /* MyMacthesViewController.swift */; };
 		7929EE5C2777E195002CA58B /* AddStadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929EE5B2777E195002CA58B /* AddStadeViewController.swift */; };
 		7929EE5E2777E814002CA58B /* StadePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929EE5D2777E814002CA58B /* StadePictureViewController.swift */; };
 		799B1B87274A8D67003A0C4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B86274A8D67003A0C4E /* LoginViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicViewController.swift; sourceTree = "<group>"; };
+		7910FB85277BD891008E452E /* MyMacthesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMacthesViewController.swift; sourceTree = "<group>"; };
 		7929EE5B2777E195002CA58B /* AddStadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStadeViewController.swift; sourceTree = "<group>"; };
 		7929EE5D2777E814002CA58B /* StadePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadePictureViewController.swift; sourceTree = "<group>"; };
 		799B1B86274A8D67003A0C4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */,
 				7929EE5B2777E195002CA58B /* AddStadeViewController.swift */,
 				7929EE5D2777E814002CA58B /* StadePictureViewController.swift */,
+				7910FB85277BD891008E452E /* MyMacthesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7910FB86277BD891008E452E /* MyMacthesViewController.swift in Sources */,
 				79A4B5A92753D23000220081 /* liveMatchModel.swift in Sources */,
 				79FB584A2777B38300C9889B /* MatchModel.swift in Sources */,
 				799B1B95274A8E89003A0C4E /* NewsDetailsViewController.swift in Sources */,

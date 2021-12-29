@@ -15,7 +15,7 @@ import FoundationNetworking
 
 class MatchAPI {
     static let shareInstance = MatchAPI()
-    let url: String = "192.168.1.17";
+    let url: String = "192.168.1.9";
     
     
     func addStade(name: String, capacity: Int, price: Float, location: String, phone: String, datetime: String) -> String{
@@ -38,7 +38,7 @@ class MatchAPI {
             return
           }
             status = String(data: data, encoding: .utf8)!
-          print(String(data: data, encoding: .utf8)!)
+          //print(String(data: data, encoding: .utf8)!)
           semaphore.signal()
         }
 
@@ -124,7 +124,7 @@ class MatchAPI {
             } catch let err {
                 print(err)
             }
-          print(String(data: data, encoding: .utf8)!)
+          //print(String(data: data, encoding: .utf8)!)
           semaphore.signal()
         }
 
@@ -276,5 +276,75 @@ class MatchAPI {
 
     }
     
+    
+    
+    func getallmatches() -> Array<MatchModel> {
+        var matches = [MatchModel]()
+
+        var semaphore = DispatchSemaphore (value: 0)
+
+        let parameters = ""
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/match/")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+            do {
+                matches = try JSONDecoder().decode(Array<MatchModel>.self, from: data)
+                //print(matches)
+                
+                
+            } catch let err {
+                print(err)
+            }
+          //print(String(data: data, encoding: .utf8)!)
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+        return matches
+    }
+    
+    
+    func getstadebyid(stadeid: String) -> StadeModel {
+        
+        var semaphore = DispatchSemaphore (value: 0)
+        var stade = StadeModel()
+        let parameters = ""
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/stades/"+stadeid)!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+            do {
+                stade = try JSONDecoder().decode(StadeModel.self, from: data)
+                //print(user._id)
+                
+            } catch let err {
+                print(err)
+            }
+          //print(String(data: data, encoding: .utf8)!)
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+        return stade
+    }
     
 }

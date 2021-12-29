@@ -14,7 +14,7 @@ import FoundationNetworking
 
 class APIFunctions {
     static let shareInstance = APIFunctions()
-    let url: String = "192.168.1.17";
+    let url: String = "192.168.1.9";
     ///// REGISTER
     func Register(user : userModel) -> Int{
         
@@ -76,7 +76,7 @@ class APIFunctions {
           }
             do {
                 user = try JSONDecoder().decode(userModel.self, from: data)
-                //print(user._id)
+                
                 
             } catch let err {
                 print(err)

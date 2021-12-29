@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -55,7 +56,7 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
         let image = imagepath.components(separatedBy: "upload\\images\\")[1]
         
         
-        let url = URL(string: "http://192.168.1.17:3000/"+image)
+        let url = URL(string: "http://192.168.1.9:3000/"+image)
         let data = try? Data(contentsOf: url!)
 
         if let imageData = data {
@@ -70,7 +71,6 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
     var sentstadeid: String?
     var senttitle: String?
     var sentdate: String?
-    
     
     
     @IBOutlet weak var nametitle: UILabel!
@@ -103,6 +103,10 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
         if teamchoice == "teamB" {
             joinbutton.isHidden = true
         }
+        
+        
+        
+        
     }
     
     
@@ -129,6 +133,9 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
 
             } else if id == nil {
                 MatchAPI.shareInstance.jointeamA(userid: userid!, matchid: match._id!)
+                
+               
+                
                 let alert = UIAlertController(title: "Done", message: "Successfully joined the match",preferredStyle: .alert)
                 let action = UIAlertAction(title:"ok", style: .cancel, handler: nil)
                 alert.addAction(action)
@@ -140,6 +147,16 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "teamB" {
             let destination = segue.destination as! Lineup2ViewController
