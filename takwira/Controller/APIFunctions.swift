@@ -15,6 +15,40 @@ import FoundationNetworking
 class APIFunctions {
     static let shareInstance = APIFunctions()
     let url: String = "192.168.1.9";
+    
+    
+    func checkinternet() -> Int {
+        var status: Int = 0
+        var semaphore = DispatchSemaphore (value: 0)
+
+        let parameters = ""
+        let postData =  parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "http://"+url+":3000/api/")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            semaphore.signal()
+            return
+          }
+            status = (response as! HTTPURLResponse).statusCode
+          
+          semaphore.signal()
+        }
+
+        task.resume()
+        semaphore.wait()
+        return status
+    }
+    
+    
+    
+    
+    
+    
     ///// REGISTER
     func Register(user : userModel) -> Int{
         
@@ -43,7 +77,7 @@ class APIFunctions {
           }
             status = (response as! HTTPURLResponse).statusCode
             
-          print(String(data: data, encoding: .utf8)!)
+          //print(String(data: data, encoding: .utf8)!)
           semaphore.signal()
         }
         task.resume()

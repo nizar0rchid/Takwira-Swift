@@ -32,12 +32,14 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        if id != nil {
-            
+        let status = APIFunctions.shareInstance.checkinternet()
+        if status != 200 {
+            let secondVC = storyboard?.instantiateViewController(withIdentifier: "nointernet") as! NoInternetViewController
+            self.present(secondVC, animated:true, completion:nil)
+        }else if status == 200 && id != nil {
             performSegue(withIdentifier: "remember", sender: self)
-            
         }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

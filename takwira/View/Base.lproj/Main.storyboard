@@ -10,6 +10,55 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--No Internet View Controller-->
+        <scene sceneID="gFn-Rt-hRH">
+            <objects>
+                <viewController storyboardIdentifier="nointernet" modalPresentationStyle="fullScreen" id="vFG-fF-tXR" customClass="NoInternetViewController" customModule="takwira" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l8l-XV-Beg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Please check your internet and try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADv-aq-7JM">
+                                <rect key="frame" x="0.0" y="560" width="408" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="BPw-Y0-ecz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet connection found, " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-Ym-Fvc">
+                                <rect key="frame" x="58" y="496" width="298" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yYv-be-A5O">
+                                <rect key="frame" x="88" y="268" width="232" height="128"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oEA-2d-UNC"/>
+                        <color key="backgroundColor" red="0.05101535469" green="0.051864318550000003" blue="0.074575431639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ADv-aq-7JM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oEA-2d-UNC" secondAttribute="leading" id="2Cr-Qh-tm2"/>
+                            <constraint firstItem="oEA-2d-UNC" firstAttribute="trailing" secondItem="ADv-aq-7JM" secondAttribute="trailing" constant="6" id="4BZ-KH-2fd"/>
+                            <constraint firstItem="vDI-Ym-Fvc" firstAttribute="leading" secondItem="oEA-2d-UNC" secondAttribute="leading" constant="58" id="CUo-6f-kWK"/>
+                            <constraint firstItem="oEA-2d-UNC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vDI-Ym-Fvc" secondAttribute="trailing" symbolic="YES" id="II4-DQ-EOy"/>
+                            <constraint firstItem="ADv-aq-7JM" firstAttribute="top" secondItem="vDI-Ym-Fvc" secondAttribute="bottom" constant="36" id="McF-z8-rLk"/>
+                            <constraint firstItem="yYv-be-A5O" firstAttribute="top" secondItem="oEA-2d-UNC" secondAttribute="top" constant="224.66666666666669" id="PoB-l6-vm5"/>
+                            <constraint firstItem="vDI-Ym-Fvc" firstAttribute="top" secondItem="yYv-be-A5O" secondAttribute="bottom" constant="98" id="Z1d-fT-gr7"/>
+                            <constraint firstItem="yYv-be-A5O" firstAttribute="leading" secondItem="oEA-2d-UNC" secondAttribute="leading" constant="88" id="dk2-ey-W6J"/>
+                            <constraint firstItem="vDI-Ym-Fvc" firstAttribute="top" secondItem="oEA-2d-UNC" secondAttribute="top" constant="452" id="m1s-M1-CA9"/>
+                            <constraint firstItem="yYv-be-A5O" firstAttribute="centerX" secondItem="ADv-aq-7JM" secondAttribute="centerX" id="sT9-JD-syg"/>
+                            <constraint firstItem="oEA-2d-UNC" firstAttribute="bottom" secondItem="ADv-aq-7JM" secondAttribute="bottom" constant="274" id="yHt-MV-txY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eO1-Oo-vC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665.21739130434787" y="130.58035714285714"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -2089,6 +2138,7 @@
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="splash screen" width="291" height="339"/>
+        <image name="wifi.slash" catalog="system" width="128" height="108"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
