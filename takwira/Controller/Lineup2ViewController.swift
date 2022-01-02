@@ -65,7 +65,7 @@ class Lineup2ViewController: UIViewController, UITableViewDelegate, UITableViewD
         let image = imagepath.components(separatedBy: "upload\\images\\")[1]
         
         
-        let url = URL(string: "http://192.168.1.9:3000/"+image)
+        let url = URL(string: "http://172.17.0.170:3000/"+image)
         let data = try? Data(contentsOf: url!)
 
         if let imageData = data {

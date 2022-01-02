@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SendBirdUIKit
 
 class AddStadeViewController: UIViewController {
 
@@ -54,6 +55,66 @@ class AddStadeViewController: UIViewController {
                 var userid = UserDefaults.standard.value(forKey: "id") as! String?
                 MatchAPI.shareInstance.autojoinmatch(teamcapacity: capacity!/2, stadeId: status!, userId: userid!)
                 
+                
+                let user = APIFunctions.shareInstance.finduserbyid(id: userid!)
+                let nickname = user.firstName!+" "+user.lastName!
+                let imagepath = user.profilePic!
+                
+                let image = imagepath.components(separatedBy: "upload\\images\\")[1]
+                
+                
+                let url = "http://172.17.0.170:3000/"+image
+                
+                SBUGlobals.CurrentUser = SBUUser(userId: user._id!, nickname: nickname, profileUrl: url)
+                
+                SBUMain.connect { (user, error) in
+                    guard let user = user else {
+                        // The user is offline and you can't access any user information stored in the local cache.
+                        return
+                    }
+                    if let error = error {
+                        // The user is offline but you can access user information stored in the local cache.
+                        print(error)
+                    }
+                    else {
+                        // The user is online and connected to the server.
+                    }
+                }
+                
+                
+                
+                
+                var params = SBDGroupChannelParams()
+                var users: [String] = []
+                params.isPublic = true
+                params.isEphemeral = false
+                params.isDistinct = false
+                params.isSuper = false
+                params.addUserIds(users)
+                params.operatorUserIds = [userid!]       // Or .operators
+                params.name = nameTF.text!
+                params.channelUrl = status!  // In a group channel, you can create a new channel by specifying its unique channel URL in a 'GroupChannelParams' object.
+                params.coverImage = nil            // Or .coverUrl
+                params.data = nil
+                params.customType = nil
+                
+                SBDGroupChannel.createChannel(with: params, completionHandler: { (groupChannel, error) in
+                    guard error == nil else {
+                        print(error)
+                        return
+                    }
+
+                    // A group channel with detailed configuration is successfully created.
+                    // By using groupChannel.channelUrl, groupChannel.members, groupChannel.data, groupChannel.customType, and so on,
+                    // you can access the result object from Sendbird server to check your SBDGroupChannelParams configuration.
+                    let channelUrl = groupChannel?.channelUrl
+                   
+                })
+                
+                
+                
+                
+                /////////////////
                 performSegue(withIdentifier: "addstadepic", sender: self)
             } else {
                 let alert = UIAlertController(title: title, message: "Some error occured, please try again",preferredStyle: .alert)

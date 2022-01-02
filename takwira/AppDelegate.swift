@@ -7,14 +7,25 @@
 
 import UIKit
 import CoreData
+import SendBirdUIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var userid: String?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let APP_ID = "6375DF19-F594-4915-A77A-53EFDC78476A"  // Specify your Sendbird application ID.
+           SBUMain.initialize(applicationId: APP_ID) {
+               // DB migration has started.
+           } completionHandler: { error in
+               // If DB migration is successful, proceed to the next step.
+               // If DB migration fails, an error exists.
+           }
+        
+        SBUTheme.set(theme: .dark)
         return true
     }
 

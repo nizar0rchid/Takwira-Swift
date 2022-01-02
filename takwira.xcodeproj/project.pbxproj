@@ -37,9 +37,13 @@
 		79FB58482777696200C9889B /* MatchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB58472777696200C9889B /* MatchAPI.swift */; };
 		79FB584A2777B38300C9889B /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB58492777B38300C9889B /* MatchModel.swift */; };
 		79FB584C2777B41000C9889B /* StadeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB584B2777B41000C9889B /* StadeModel.swift */; };
+		87D71F603A43EE8461638D91 /* Pods_takwira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA9616E05D1462183FDDE8C /* Pods_takwira.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0093659CC2B1A515347777 /* Pods-takwira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takwira.release.xcconfig"; path = "Target Support Files/Pods-takwira/Pods-takwira.release.xcconfig"; sourceTree = "<group>"; };
+		5FA9616E05D1462183FDDE8C /* Pods_takwira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_takwira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EA23FF908E0FE01115C307 /* Pods-takwira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takwira.debug.xcconfig"; path = "Target Support Files/Pods-takwira/Pods-takwira.debug.xcconfig"; sourceTree = "<group>"; };
 		79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicViewController.swift; sourceTree = "<group>"; };
 		7910FB85277BD891008E452E /* MyMacthesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMacthesViewController.swift; sourceTree = "<group>"; };
 		7929EE5B2777E195002CA58B /* AddStadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStadeViewController.swift; sourceTree = "<group>"; };
@@ -79,12 +83,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				79087E592774B0CF00AC1BA3 /* Alamofire in Frameworks */,
+				87D71F603A43EE8461638D91 /* Pods_takwira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474F833CDA95A001D3BDF103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FA9616E05D1462183FDDE8C /* Pods_takwira.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F0B58C5273BDBA9001ED459 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +150,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6C5F4BD1D1DF5FB106DA9662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65EA23FF908E0FE01115C307 /* Pods-takwira.debug.xcconfig */,
+				3D0093659CC2B1A515347777 /* Pods-takwira.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		79EDA7FC273ADD6500E97ABA = {
 			isa = PBXGroup;
 			children = (
 				79EDA807273ADD6500E97ABA /* takwira */,
 				79EDA806273ADD6500E97ABA /* Products */,
+				6C5F4BD1D1DF5FB106DA9662 /* Pods */,
+				474F833CDA95A001D3BDF103 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79EDA81C273ADD6600E97ABA /* Build configuration list for PBXNativeTarget "takwira" */;
 			buildPhases = (
+				13138BABF4E4B538FF65E6A3 /* [CP] Check Pods Manifest.lock */,
 				79EDA801273ADD6500E97ABA /* Sources */,
 				79EDA802273ADD6500E97ABA /* Frameworks */,
 				79EDA803273ADD6500E97ABA /* Resources */,
+				01FD64F4EDA185F8462540A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,7 +244,7 @@
 			);
 			mainGroup = 79EDA7FC273ADD6500E97ABA;
 			packageReferences = (
-				79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = 79EDA806273ADD6500E97ABA /* Products */;
 			projectDirPath = "";
@@ -240,6 +267,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01FD64F4EDA185F8462540A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13138BABF4E4B538FF65E6A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-takwira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79EDA801273ADD6500E97ABA /* Sources */ = {
@@ -415,6 +484,7 @@
 		};
 		79EDA81D273ADD6600E97ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EA23FF908E0FE01115C307 /* Pods-takwira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -433,6 +503,7 @@
 		};
 		79EDA81E273ADD6600E97ABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0093659CC2B1A515347777 /* Pods-takwira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,7 +544,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -486,7 +557,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		79087E582774B0CF00AC1BA3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

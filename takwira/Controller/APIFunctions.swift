@@ -14,7 +14,7 @@ import FoundationNetworking
 
 class APIFunctions {
     static let shareInstance = APIFunctions()
-    let url: String = "192.168.1.9";
+    let url: String = "172.17.0.170";
     
     
     func checkinternet() -> Int {

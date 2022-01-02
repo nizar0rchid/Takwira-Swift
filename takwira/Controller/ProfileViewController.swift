@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SendBirdUIKit
 
 class ProfileViewController: UIViewController {
     
@@ -42,7 +43,7 @@ class ProfileViewController: UIViewController {
         let image = imagepath.components(separatedBy: "upload\\images\\")[1]
         
         
-        let url = URL(string: "http://192.168.1.9:3000/"+image)
+        let url = URL(string: "http://172.17.0.170:3000/"+image)
         let data = try? Data(contentsOf: url!)
 
         if let imageData = data {
@@ -64,6 +65,23 @@ class ProfileViewController: UIViewController {
     @IBAction func logoutAction(_ sender: Any) {
         
         performSegue(withIdentifier: "logoutSegue", sender: self)
+        
+        
+        /*SBDOpenChannel.createChannel(withName: "nameTF.text", channelUrl: "status", coverUrl: "default", data: nil, operatorUserIds: nil, customType: nil, completionHandler: { (openChannel, error) in
+            guard error == nil else {
+                // Handle error.
+                print(error!)
+                return
+            }
+
+            let channelUrl = openChannel?.channelUrl
+            
+        })
+        
+        let channelListVC = SBUChannelListViewController()
+        let naviVC = UINavigationController(rootViewController: channelListVC)
+        self.present(naviVC, animated: true)*/
+        
 
     }
     
