@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SendBirdSDK/SendBirdSDK.framework/SendBirdSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SendBirdUIKit/SendBirdUIKit.framework/SendBirdUIKit

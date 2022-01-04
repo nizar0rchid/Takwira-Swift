@@ -3,10 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79087E592774B0CF00AC1BA3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 79087E582774B0CF00AC1BA3 /* Alamofire */; };
+		79087E5B2774B0CF00AC1BA3 /* ProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */; };
+		7910FB86277BD891008E452E /* MyMacthesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910FB85277BD891008E452E /* MyMacthesViewController.swift */; };
+		7929EE5C2777E195002CA58B /* AddStadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929EE5B2777E195002CA58B /* AddStadeViewController.swift */; };
+		7929EE5E2777E814002CA58B /* StadePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7929EE5D2777E814002CA58B /* StadePictureViewController.swift */; };
+		7961CCED27849C2B0035A3B9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961CCEC27849C2B0035A3B9 /* env.swift */; };
+		799B1B87274A8D67003A0C4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B86274A8D67003A0C4E /* LoginViewController.swift */; };
+		799B1B89274A8DA4003A0C4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B88274A8DA4003A0C4E /* RegisterViewController.swift */; };
+		799B1B8B274A8DC0003A0C4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B8A274A8DC0003A0C4E /* HomeViewController.swift */; };
+		799B1B8D274A8DF7003A0C4E /* MatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B8C274A8DF7003A0C4E /* MatchDetailsViewController.swift */; };
+		799B1B8F274A8E25003A0C4E /* Lineup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B8E274A8E25003A0C4E /* Lineup1ViewController.swift */; };
+		799B1B91274A8E41003A0C4E /* Lineup2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B90274A8E41003A0C4E /* Lineup2ViewController.swift */; };
+		799B1B93274A8E67003A0C4E /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B92274A8E67003A0C4E /* NewsViewController.swift */; };
+		799B1B95274A8E89003A0C4E /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B94274A8E89003A0C4E /* NewsDetailsViewController.swift */; };
+		799B1B97274A8E9E003A0C4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B96274A8E9E003A0C4E /* ProfileViewController.swift */; };
+		799B1B99274A8EB7003A0C4E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */; };
+		799B1BA3274AB141003A0C4E /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1BA2274AB141003A0C4E /* APIFunctions.swift */; };
+		799B1BA5274AB1C5003A0C4E /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799B1BA4274AB1C5003A0C4E /* userModel.swift */; };
+		79A4B5A92753D23000220081 /* liveMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A4B5A82753D23000220081 /* liveMatchModel.swift */; };
+		79D3EFBA277C10A30068DBCB /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3EFB9277C10A30068DBCB /* NoInternetViewController.swift */; };
 		79EDA809273ADD6500E97ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA808273ADD6500E97ABA /* AppDelegate.swift */; };
 		79EDA80B273ADD6500E97ABA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA80A273ADD6500E97ABA /* SceneDelegate.swift */; };
 		79EDA80D273ADD6500E97ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA80C273ADD6500E97ABA /* ViewController.swift */; };
@@ -14,9 +34,36 @@
 		79EDA813273ADD6500E97ABA /* takwira.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79EDA811273ADD6500E97ABA /* takwira.xcdatamodeld */; };
 		79EDA815273ADD6600E97ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EDA814273ADD6600E97ABA /* Assets.xcassets */; };
 		79EDA818273ADD6600E97ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79EDA816273ADD6600E97ABA /* LaunchScreen.storyboard */; };
+		79FB584627775D1000C9889B /* ChangeProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */; };
+		79FB58482777696200C9889B /* MatchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB58472777696200C9889B /* MatchAPI.swift */; };
+		79FB584A2777B38300C9889B /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB58492777B38300C9889B /* MatchModel.swift */; };
+		79FB584C2777B41000C9889B /* StadeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FB584B2777B41000C9889B /* StadeModel.swift */; };
+		87D71F603A43EE8461638D91 /* Pods_takwira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA9616E05D1462183FDDE8C /* Pods_takwira.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0093659CC2B1A515347777 /* Pods-takwira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takwira.release.xcconfig"; path = "Target Support Files/Pods-takwira/Pods-takwira.release.xcconfig"; sourceTree = "<group>"; };
+		5FA9616E05D1462183FDDE8C /* Pods_takwira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_takwira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EA23FF908E0FE01115C307 /* Pods-takwira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takwira.debug.xcconfig"; path = "Target Support Files/Pods-takwira/Pods-takwira.debug.xcconfig"; sourceTree = "<group>"; };
+		79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicViewController.swift; sourceTree = "<group>"; };
+		7910FB85277BD891008E452E /* MyMacthesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMacthesViewController.swift; sourceTree = "<group>"; };
+		7929EE5B2777E195002CA58B /* AddStadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStadeViewController.swift; sourceTree = "<group>"; };
+		7929EE5D2777E814002CA58B /* StadePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadePictureViewController.swift; sourceTree = "<group>"; };
+		7961CCEC27849C2B0035A3B9 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		799B1B86274A8D67003A0C4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		799B1B88274A8DA4003A0C4E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		799B1B8A274A8DC0003A0C4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		799B1B8C274A8DF7003A0C4E /* MatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewController.swift; sourceTree = "<group>"; };
+		799B1B8E274A8E25003A0C4E /* Lineup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lineup1ViewController.swift; sourceTree = "<group>"; };
+		799B1B90274A8E41003A0C4E /* Lineup2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lineup2ViewController.swift; sourceTree = "<group>"; };
+		799B1B92274A8E67003A0C4E /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		799B1B94274A8E89003A0C4E /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		799B1B96274A8E9E003A0C4E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		799B1BA2274AB141003A0C4E /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctions.swift; path = takwira/Controller/APIFunctions.swift; sourceTree = SOURCE_ROOT; };
+		799B1BA4274AB1C5003A0C4E /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = userModel.swift; path = takwira/Controller/userModel.swift; sourceTree = SOURCE_ROOT; };
+		79A4B5A82753D23000220081 /* liveMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = liveMatchModel.swift; path = takwira/Controller/liveMatchModel.swift; sourceTree = SOURCE_ROOT; };
+		79D3EFB9277C10A30068DBCB /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
 		79EDA805273ADD6500E97ABA /* takwira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takwira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EDA808273ADD6500E97ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79EDA80A273ADD6500E97ABA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +73,10 @@
 		79EDA814273ADD6600E97ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79EDA817273ADD6600E97ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79EDA819273ADD6600E97ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfilePictureViewController.swift; sourceTree = "<group>"; };
+		79FB58472777696200C9889B /* MatchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchAPI.swift; path = takwira/Controller/MatchAPI.swift; sourceTree = SOURCE_ROOT; };
+		79FB58492777B38300C9889B /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchModel.swift; path = takwira/Controller/MatchModel.swift; sourceTree = SOURCE_ROOT; };
+		79FB584B2777B41000C9889B /* StadeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StadeModel.swift; path = takwira/Controller/StadeModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +84,98 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79087E592774B0CF00AC1BA3 /* Alamofire in Frameworks */,
+				87D71F603A43EE8461638D91 /* Pods_takwira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474F833CDA95A001D3BDF103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FA9616E05D1462183FDDE8C /* Pods_takwira.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F0B58C5273BDBA9001ED459 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79EDA80E273ADD6500E97ABA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F0B58C6273BDBBF001ED459 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				799B1BA4274AB1C5003A0C4E /* userModel.swift */,
+				79A4B5A82753D23000220081 /* liveMatchModel.swift */,
+				79FB58492777B38300C9889B /* MatchModel.swift */,
+				79FB584B2777B41000C9889B /* StadeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F0B58C7273BDBD1001ED459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				799B1B86274A8D67003A0C4E /* LoginViewController.swift */,
+				799B1B88274A8DA4003A0C4E /* RegisterViewController.swift */,
+				799B1B8A274A8DC0003A0C4E /* HomeViewController.swift */,
+				79EDA80C273ADD6500E97ABA /* ViewController.swift */,
+				799B1B8C274A8DF7003A0C4E /* MatchDetailsViewController.swift */,
+				799B1B8E274A8E25003A0C4E /* Lineup1ViewController.swift */,
+				799B1B90274A8E41003A0C4E /* Lineup2ViewController.swift */,
+				799B1B92274A8E67003A0C4E /* NewsViewController.swift */,
+				799B1B94274A8E89003A0C4E /* NewsDetailsViewController.swift */,
+				799B1B96274A8E9E003A0C4E /* ProfileViewController.swift */,
+				799B1B98274A8EB7003A0C4E /* EditProfileViewController.swift */,
+				79087E5A2774B0CF00AC1BA3 /* ProfilePicViewController.swift */,
+				79FB584527775D1000C9889B /* ChangeProfilePictureViewController.swift */,
+				7929EE5B2777E195002CA58B /* AddStadeViewController.swift */,
+				7929EE5D2777E814002CA58B /* StadePictureViewController.swift */,
+				7910FB85277BD891008E452E /* MyMacthesViewController.swift */,
+				79D3EFB9277C10A30068DBCB /* NoInternetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F0B58C8273BDBFD001ED459 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				799B1BA2274AB141003A0C4E /* APIFunctions.swift */,
+				79FB58472777696200C9889B /* MatchAPI.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C5F4BD1D1DF5FB106DA9662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65EA23FF908E0FE01115C307 /* Pods-takwira.debug.xcconfig */,
+				3D0093659CC2B1A515347777 /* Pods-takwira.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7961CCEB27849C080035A3B9 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				7961CCEC27849C2B0035A3B9 /* env.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
 		79EDA7FC273ADD6500E97ABA = {
 			isa = PBXGroup;
 			children = (
 				79EDA807273ADD6500E97ABA /* takwira */,
 				79EDA806273ADD6500E97ABA /* Products */,
+				6C5F4BD1D1DF5FB106DA9662 /* Pods */,
+				474F833CDA95A001D3BDF103 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +190,13 @@
 		79EDA807273ADD6500E97ABA /* takwira */ = {
 			isa = PBXGroup;
 			children = (
+				7961CCEB27849C080035A3B9 /* Globals */,
+				4F0B58C8273BDBFD001ED459 /* ViewModel */,
+				4F0B58C7273BDBD1001ED459 /* Controller */,
+				4F0B58C6273BDBBF001ED459 /* Model */,
+				4F0B58C5273BDBA9001ED459 /* View */,
 				79EDA808273ADD6500E97ABA /* AppDelegate.swift */,
 				79EDA80A273ADD6500E97ABA /* SceneDelegate.swift */,
-				79EDA80C273ADD6500E97ABA /* ViewController.swift */,
-				79EDA80E273ADD6500E97ABA /* Main.storyboard */,
 				79EDA814273ADD6600E97ABA /* Assets.xcassets */,
 				79EDA816273ADD6600E97ABA /* LaunchScreen.storyboard */,
 				79EDA819273ADD6600E97ABA /* Info.plist */,
@@ -77,15 +212,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79EDA81C273ADD6600E97ABA /* Build configuration list for PBXNativeTarget "takwira" */;
 			buildPhases = (
+				13138BABF4E4B538FF65E6A3 /* [CP] Check Pods Manifest.lock */,
 				79EDA801273ADD6500E97ABA /* Sources */,
 				79EDA802273ADD6500E97ABA /* Frameworks */,
 				79EDA803273ADD6500E97ABA /* Resources */,
+				01FD64F4EDA185F8462540A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = takwira;
+			packageProductDependencies = (
+				79087E582774B0CF00AC1BA3 /* Alamofire */,
+			);
 			productName = takwira;
 			productReference = 79EDA805273ADD6500E97ABA /* takwira.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 79EDA7FC273ADD6500E97ABA;
+			packageReferences = (
+				79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 79EDA806273ADD6500E97ABA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,15 +278,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01FD64F4EDA185F8462540A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-takwira/Pods-takwira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13138BABF4E4B538FF65E6A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-takwira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79EDA801273ADD6500E97ABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7910FB86277BD891008E452E /* MyMacthesViewController.swift in Sources */,
+				79A4B5A92753D23000220081 /* liveMatchModel.swift in Sources */,
+				79FB584A2777B38300C9889B /* MatchModel.swift in Sources */,
+				799B1B95274A8E89003A0C4E /* NewsDetailsViewController.swift in Sources */,
 				79EDA80D273ADD6500E97ABA /* ViewController.swift in Sources */,
+				7961CCED27849C2B0035A3B9 /* env.swift in Sources */,
 				79EDA809273ADD6500E97ABA /* AppDelegate.swift in Sources */,
+				7929EE5C2777E195002CA58B /* AddStadeViewController.swift in Sources */,
+				79FB584627775D1000C9889B /* ChangeProfilePictureViewController.swift in Sources */,
+				799B1B91274A8E41003A0C4E /* Lineup2ViewController.swift in Sources */,
+				799B1BA3274AB141003A0C4E /* APIFunctions.swift in Sources */,
+				799B1B8D274A8DF7003A0C4E /* MatchDetailsViewController.swift in Sources */,
+				79FB58482777696200C9889B /* MatchAPI.swift in Sources */,
+				799B1B93274A8E67003A0C4E /* NewsViewController.swift in Sources */,
+				799B1B99274A8EB7003A0C4E /* EditProfileViewController.swift in Sources */,
 				79EDA80B273ADD6500E97ABA /* SceneDelegate.swift in Sources */,
+				7929EE5E2777E814002CA58B /* StadePictureViewController.swift in Sources */,
+				799B1B89274A8DA4003A0C4E /* RegisterViewController.swift in Sources */,
+				79087E5B2774B0CF00AC1BA3 /* ProfilePicViewController.swift in Sources */,
+				799B1BA5274AB1C5003A0C4E /* userModel.swift in Sources */,
+				799B1B87274A8D67003A0C4E /* LoginViewController.swift in Sources */,
+				79D3EFBA277C10A30068DBCB /* NoInternetViewController.swift in Sources */,
+				799B1B8B274A8DC0003A0C4E /* HomeViewController.swift in Sources */,
+				799B1B97274A8E9E003A0C4E /* ProfileViewController.swift in Sources */,
 				79EDA813273ADD6500E97ABA /* takwira.xcdatamodeld in Sources */,
+				799B1B8F274A8E25003A0C4E /* Lineup1ViewController.swift in Sources */,
+				79FB584C2777B41000C9889B /* StadeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +495,7 @@
 		};
 		79EDA81D273ADD6600E97ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EA23FF908E0FE01115C307 /* Pods-takwira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +514,7 @@
 		};
 		79EDA81E273ADD6600E97ABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0093659CC2B1A515347777 /* Pods-takwira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -343,6 +553,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79087E582774B0CF00AC1BA3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79087E572774B0CF00AC1BA3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79EDA811273ADD6500E97ABA /* takwira.xcdatamodeld */ = {
