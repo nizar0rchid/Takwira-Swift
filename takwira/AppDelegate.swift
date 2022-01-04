@@ -8,6 +8,9 @@
 import UIKit
 import CoreData
 import SendBirdUIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var userid: String?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        AppCenter.start(withAppSecret: "819d6f0b-fbd1-4d67-8e18-b01855885b1d", services:[
+          Analytics.self,
+          Crashes.self
+        ])
         // Override point for customization after application launch.
         let APP_ID = "6375DF19-F594-4915-A77A-53EFDC78476A"  // Specify your Sendbird application ID.
            SBUMain.initialize(applicationId: APP_ID) {

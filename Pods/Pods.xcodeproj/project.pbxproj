@@ -24,34 +24,51 @@
 				0427DCC7E265987D86D6D68991E2E315 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				1E7A1A1E9B9A98E31E398FEF00792085 /* PBXTargetDependency */,
+				336B8977132DD5726219F737A199BAB0 /* PBXTargetDependency */,
 			);
 			name = SendBirdUIKit;
+		};
+		A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5242D03FC5C1EAA4F817066052F80607 /* Build configuration list for PBXAggregateTarget "AppCenter" */;
+			buildPhases = (
+				AAD7D4593ED3B713FDA455F0E36487CE /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = AppCenter;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5CBFB39F653A395AAD5476A32ED7A5B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B14A8DEA66C69E7F6844B76908D2695B /* Pods-takwira-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B56245EDA2CA71B64AE5192C8581B06 /* Pods-takwira-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F22B5E1D891A7ECB8B47A9EA195B2184 /* Pods-takwira-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9CAC8A90AF923A2C4B3E179D42A490 /* Pods-takwira-dummy.m */; };
+		7156D7E4428C957B01842BAB07D0E8DF /* Pods-takwira-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B56245EDA2CA71B64AE5192C8581B06 /* Pods-takwira-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D90F2CABABEB5F8DD90AE0AFDEDEE5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C7025C29D13DBBB8590FD8ADCA2121BA /* Pods-takwira-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9CAC8A90AF923A2C4B3E179D42A490 /* Pods-takwira-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8789B9C32DB9510EB784FCC4B6330C80 /* PBXContainerItemProxy */ = {
+		59FBCE711732BF8E8718B6FB76B26089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+		8BA1AE721CB7E033C4DF2FA1D39B9569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 89D97488C4F8726AB4F3C61EDD95CC56;
 			remoteInfo = SendBirdUIKit;
 		};
-		B352C2387AF3F12AFB6639DD22F9C5C4 /* PBXContainerItemProxy */ = {
+		A3613FD1D05B1B0D66A22912361E3ED8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3A49971F16C114258A534BEEE094303E;
 			remoteInfo = SendBirdSDK;
 		};
-		F6C5F40AAB6FC4D986CC2941CF94062C /* PBXContainerItemProxy */ = {
+		F9A474679ED5D487FF52544864639C0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -61,49 +78,73 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0468E6FF4B9B3C1CBCC97543D9979408 /* SendBirdUIKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SendBirdUIKit-xcframeworks.sh"; sourceTree = "<group>"; };
 		0D799EC2303D8726DA390A803062D1ED /* Pods-takwira-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-takwira-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3B0019B1129CA8A9114B2AA66020CEE5 /* SendBirdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SendBirdSDK.xcframework; path = Sources/SendBirdSDK.xcframework; sourceTree = "<group>"; };
-		4F4A7EBBE264F07BABE9EED2810AFFAD /* SendBirdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdSDK.debug.xcconfig; sourceTree = "<group>"; };
+		19ED2B4B6B47C17357A19F7E49C07032 /* SendBirdUIKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SendBirdUIKit.xcframework; path = Framework/SendBirdUIKit.xcframework; sourceTree = "<group>"; };
+		1A2231C40F04D3EC0427229843957869 /* AppCenterCrashes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterCrashes.xcframework; path = "AppCenter-SDK-Apple/AppCenterCrashes.xcframework"; sourceTree = "<group>"; };
+		51133F3A423B390FD98190A77BA3D7BA /* AppCenter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppCenter-xcframeworks.sh"; sourceTree = "<group>"; };
+		51BE6B5286113C567BCC4945C076EE65 /* AppCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.debug.xcconfig; sourceTree = "<group>"; };
 		531E8A1A78716CA30C5A1DCC7182737B /* Pods-takwira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-takwira.release.xcconfig"; sourceTree = "<group>"; };
-		577A86AB9EB8CE4DD6827345D0A5FF30 /* SendBirdUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdUIKit.release.xcconfig; sourceTree = "<group>"; };
-		5E7F727011E8DA9BD81C6C425EAC267D /* SendBirdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdSDK.release.xcconfig; sourceTree = "<group>"; };
-		613E5BBD1625AEEB00D707473877E0B2 /* SendBirdUIKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SendBirdUIKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		6A65E1E7187A57DCB7997D165C89062E /* SendBirdUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdUIKit.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		733B89A832FCA1FC2FA77F524123AAA2 /* SendBirdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SendBirdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		7505144BA7C8EAFF68A00EF9598DC4A3 /* SendBirdUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdUIKit.debug.xcconfig; sourceTree = "<group>"; };
 		90806F511665C42ECA048893747494B4 /* Pods-takwira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-takwira.debug.xcconfig"; sourceTree = "<group>"; };
 		987E5F0E8779939F1E659F169D4827E8 /* Pods-takwira.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-takwira.modulemap"; sourceTree = "<group>"; };
 		9B56245EDA2CA71B64AE5192C8581B06 /* Pods-takwira-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-takwira-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A048D7CA0EA117C363479ADFF10A34DA /* SendBirdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SendBirdSDK.xcframework; path = Sources/SendBirdSDK.xcframework; sourceTree = "<group>"; };
+		A187E8D73B3F1EF99AC46AA0FCE66944 /* AppCenterAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterAnalytics.xcframework; path = "AppCenter-SDK-Apple/AppCenterAnalytics.xcframework"; sourceTree = "<group>"; };
+		A2854D68513C4BECDDC4F056F029262F /* SendBirdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdSDK.release.xcconfig; sourceTree = "<group>"; };
+		AE879BCD99B1E2C61A5D0D6059E81F47 /* SendBirdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdSDK.debug.xcconfig; sourceTree = "<group>"; };
 		B339FE5AEC38B589ED7E8BCF1186E100 /* Pods-takwira-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-takwira-Info.plist"; sourceTree = "<group>"; };
+		B626A3EFB238A5DDAE6DD14637F21196 /* AppCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.release.xcconfig; sourceTree = "<group>"; };
 		BA6ED6FC757D7521B64322731956F938 /* Pods-takwira-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-takwira-acknowledgements.plist"; sourceTree = "<group>"; };
-		C0F8CA1B321FB8EE082E15869DDF06D4 /* SendBirdUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendBirdUIKit.debug.xcconfig; sourceTree = "<group>"; };
 		D01F32CB2332F33600BA249E31C91292 /* Pods-takwira-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-takwira-frameworks.sh"; sourceTree = "<group>"; };
 		D084044283E95087CB2EDE79FF8D641D /* Pods-takwira */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-takwira"; path = Pods_takwira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F862A0EEDE3514AA4968B1C4C3456DD6 /* SendBirdUIKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SendBirdUIKit.xcframework; path = Framework/SendBirdUIKit.xcframework; sourceTree = "<group>"; };
+		E38CB6C31B073CC0C1DB41175EB9B33A /* SendBirdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SendBirdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		EAD5F92CF8007D8820113C44D719BBCF /* AppCenter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenter.xcframework; path = "AppCenter-SDK-Apple/AppCenter.xcframework"; sourceTree = "<group>"; };
 		FF9CAC8A90AF923A2C4B3E179D42A490 /* Pods-takwira-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-takwira-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37AE3FD03E67548D44B5C42FAB31932C /* Frameworks */ = {
+		8821336DC91ACA45FC5BD1A6A70A2E2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CBFB39F653A395AAD5476A32ED7A5B1 /* Foundation.framework in Frameworks */,
+				9D90F2CABABEB5F8DD90AE0AFDEDEE5B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03762B59DEC82498861771EE9B025533 /* Support Files */ = {
+		00BBD3AE4B164B0961D460BFC3B264F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				733B89A832FCA1FC2FA77F524123AAA2 /* SendBirdSDK-xcframeworks.sh */,
-				4F4A7EBBE264F07BABE9EED2810AFFAD /* SendBirdSDK.debug.xcconfig */,
-				5E7F727011E8DA9BD81C6C425EAC267D /* SendBirdSDK.release.xcconfig */,
+				51133F3A423B390FD98190A77BA3D7BA /* AppCenter-xcframeworks.sh */,
+				51BE6B5286113C567BCC4945C076EE65 /* AppCenter.debug.xcconfig */,
+				B626A3EFB238A5DDAE6DD14637F21196 /* AppCenter.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SendBirdSDK";
+			path = "../Target Support Files/AppCenter";
+			sourceTree = "<group>";
+		};
+		10B08C478FD13DDCF264EFB36291935B /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				9494B95B8EF312863F959EACB02CB00D /* Frameworks */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		189982B1D1A419E080F6D298EE5926AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E3B596DBA33A7DF89D042D4CEF077F1 /* AppCenter */,
+				350326E911EDF9D91FEBFA1DA1E00E16 /* SendBirdSDK */,
+				38D793848B27D85B167F7BB34957DEB8 /* SendBirdUIKit */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1E86F0FD8C223B097BAEEB9FECCC7D63 /* Pods-takwira */ = {
@@ -123,12 +164,56 @@
 			path = "Target Support Files/Pods-takwira";
 			sourceTree = "<group>";
 		};
-		26F8046E5BE7E9ADCE19D86E503A81A5 /* Support Files */ = {
+		21E162A4D1F28EAD3A0179CF589AC116 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				613E5BBD1625AEEB00D707473877E0B2 /* SendBirdUIKit-xcframeworks.sh */,
-				C0F8CA1B321FB8EE082E15869DDF06D4 /* SendBirdUIKit.debug.xcconfig */,
-				577A86AB9EB8CE4DD6827345D0A5FF30 /* SendBirdUIKit.release.xcconfig */,
+				19ED2B4B6B47C17357A19F7E49C07032 /* SendBirdUIKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		350326E911EDF9D91FEBFA1DA1E00E16 /* SendBirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F2A4EA080E9D0D01BD639DA4E6B9A /* Frameworks */,
+				E023C3815008D1F796B67BF56C567587 /* Support Files */,
+			);
+			name = SendBirdSDK;
+			path = SendBirdSDK;
+			sourceTree = "<group>";
+		};
+		38D793848B27D85B167F7BB34957DEB8 /* SendBirdUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				21E162A4D1F28EAD3A0179CF589AC116 /* Frameworks */,
+				571F5427FA66E3FE8549F03952A406BB /* Support Files */,
+			);
+			name = SendBirdUIKit;
+			path = SendBirdUIKit;
+			sourceTree = "<group>";
+		};
+		3A3F2A4EA080E9D0D01BD639DA4E6B9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A048D7CA0EA117C363479ADFF10A34DA /* SendBirdSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50D2D8BD8AB2D136DD6C196CF714CF4F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A6AFEF66B592B95C3FD6171D9700AA96 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		571F5427FA66E3FE8549F03952A406BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0468E6FF4B9B3C1CBCC97543D9979408 /* SendBirdUIKit-xcframeworks.sh */,
+				7505144BA7C8EAFF68A00EF9598DC4A3 /* SendBirdUIKit.debug.xcconfig */,
+				6A65E1E7187A57DCB7997D165C89062E /* SendBirdUIKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SendBirdUIKit";
@@ -142,13 +227,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		588B3844B94BEF71D0E130FA6D5752BC /* Pods */ = {
+		6E3B596DBA33A7DF89D042D4CEF077F1 /* AppCenter */ = {
 			isa = PBXGroup;
 			children = (
-				BB9C2D1C37299D55CE588732869E661F /* SendBirdSDK */,
-				817576AE6F0A087ADCC99D3268BE834D /* SendBirdUIKit */,
+				10B08C478FD13DDCF264EFB36291935B /* Analytics */,
+				50D2D8BD8AB2D136DD6C196CF714CF4F /* Core */,
+				7F40C52BF6740C555960E217EBFC9AF1 /* Crashes */,
+				00BBD3AE4B164B0961D460BFC3B264F0 /* Support Files */,
 			);
-			name = Pods;
+			name = AppCenter;
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 		75F81E188A3125F78014F4555F366AAB /* Products */ = {
@@ -159,14 +247,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		817576AE6F0A087ADCC99D3268BE834D /* SendBirdUIKit */ = {
+		7F40C52BF6740C555960E217EBFC9AF1 /* Crashes */ = {
 			isa = PBXGroup;
 			children = (
-				E47C90728D6632E43065A509FDF6429A /* Frameworks */,
-				26F8046E5BE7E9ADCE19D86E503A81A5 /* Support Files */,
+				9C82CE3988E855D968DF540EC062159A /* Frameworks */,
 			);
-			name = SendBirdUIKit;
-			path = SendBirdUIKit;
+			name = Crashes;
+			sourceTree = "<group>";
+		};
+		9494B95B8EF312863F959EACB02CB00D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A187E8D73B3F1EF99AC46AA0FCE66944 /* AppCenterAnalytics.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C82CE3988E855D968DF540EC062159A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A2231C40F04D3EC0427229843957869 /* AppCenterCrashes.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A46C2D6C613CF6FAA259CD4420F81BCD /* Targets Support Files */ = {
@@ -177,22 +279,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AF9B5253438FC3B7235B8FD2B42D4C37 /* Frameworks */ = {
+		A6AFEF66B592B95C3FD6171D9700AA96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3B0019B1129CA8A9114B2AA66020CEE5 /* SendBirdSDK.xcframework */,
+				EAD5F92CF8007D8820113C44D719BBCF /* AppCenter.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BB9C2D1C37299D55CE588732869E661F /* SendBirdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				AF9B5253438FC3B7235B8FD2B42D4C37 /* Frameworks */,
-				03762B59DEC82498861771EE9B025533 /* Support Files */,
-			);
-			name = SendBirdSDK;
-			path = SendBirdSDK;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -200,7 +292,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				588B3844B94BEF71D0E130FA6D5752BC /* Pods */,
+				189982B1D1A419E080F6D298EE5926AC /* Pods */,
 				75F81E188A3125F78014F4555F366AAB /* Products */,
 				A46C2D6C613CF6FAA259CD4420F81BCD /* Targets Support Files */,
 			);
@@ -214,22 +306,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E47C90728D6632E43065A509FDF6429A /* Frameworks */ = {
+		E023C3815008D1F796B67BF56C567587 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F862A0EEDE3514AA4968B1C4C3456DD6 /* SendBirdUIKit.xcframework */,
+				E38CB6C31B073CC0C1DB41175EB9B33A /* SendBirdSDK-xcframeworks.sh */,
+				AE879BCD99B1E2C61A5D0D6059E81F47 /* SendBirdSDK.debug.xcconfig */,
+				A2854D68513C4BECDDC4F056F029262F /* SendBirdSDK.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SendBirdSDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		43831C336668D59B8B46449494A8F3EB /* Headers */ = {
+		F33D54F88BC1D05B28837CE2CA8A60FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14A8DEA66C69E7F6844B76908D2695B /* Pods-takwira-umbrella.h in Headers */,
+				7156D7E4428C957B01842BAB07D0E8DF /* Pods-takwira-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,18 +333,19 @@
 /* Begin PBXNativeTarget section */
 		5D9D779885812418C9F73A694D8BBA5F /* Pods-takwira */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA96EDA46D77752BAA6935369298D240 /* Build configuration list for PBXNativeTarget "Pods-takwira" */;
+			buildConfigurationList = B883018DA7EEF9AB85AAAF1E4612DC1D /* Build configuration list for PBXNativeTarget "Pods-takwira" */;
 			buildPhases = (
-				43831C336668D59B8B46449494A8F3EB /* Headers */,
-				970BBEC92F16AEFF2F0473DF6C109018 /* Sources */,
-				37AE3FD03E67548D44B5C42FAB31932C /* Frameworks */,
-				0753E0B526894A604AB49BA81D91AE32 /* Resources */,
+				F33D54F88BC1D05B28837CE2CA8A60FE /* Headers */,
+				C0DF14B0D462950BBD592FDC630E14D8 /* Sources */,
+				8821336DC91ACA45FC5BD1A6A70A2E2F /* Frameworks */,
+				C10A2604325E9DB97A295A9265D64BBC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5CF0EA736B52697EE3BA1FA4CDEB0969 /* PBXTargetDependency */,
-				8A986BE12D59CAF650FF6E0BAC7312BC /* PBXTargetDependency */,
+				413D2A7247AAE4D59EEE231E304B4813 /* PBXTargetDependency */,
+				B92D54C5E3D81FA6A1BDFBD59A8E75CA /* PBXTargetDependency */,
+				6AA84D42EBDAB6468ED2689EEBFE7B6D /* PBXTargetDependency */,
 			);
 			name = "Pods-takwira";
 			productName = Pods_takwira;
@@ -278,6 +374,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */,
 				5D9D779885812418C9F73A694D8BBA5F /* Pods-takwira */,
 				3A49971F16C114258A534BEEE094303E /* SendBirdSDK */,
 				89D97488C4F8726AB4F3C61EDD95CC56 /* SendBirdUIKit */,
@@ -286,7 +383,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0753E0B526894A604AB49BA81D91AE32 /* Resources */ = {
+		C10A2604325E9DB97A295A9265D64BBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,6 +410,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/SendBirdUIKit/SendBirdUIKit-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AAD7D4593ED3B713FDA455F0E36487CE /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA315F7DCC957EB10D2C66E844CDD2C7 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,41 +447,47 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		970BBEC92F16AEFF2F0473DF6C109018 /* Sources */ = {
+		C0DF14B0D462950BBD592FDC630E14D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22B5E1D891A7ECB8B47A9EA195B2184 /* Pods-takwira-dummy.m in Sources */,
+				C7025C29D13DBBB8590FD8ADCA2121BA /* Pods-takwira-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E7A1A1E9B9A98E31E398FEF00792085 /* PBXTargetDependency */ = {
+		336B8977132DD5726219F737A199BAB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SendBirdSDK;
 			target = 3A49971F16C114258A534BEEE094303E /* SendBirdSDK */;
-			targetProxy = F6C5F40AAB6FC4D986CC2941CF94062C /* PBXContainerItemProxy */;
+			targetProxy = A3613FD1D05B1B0D66A22912361E3ED8 /* PBXContainerItemProxy */;
 		};
-		5CF0EA736B52697EE3BA1FA4CDEB0969 /* PBXTargetDependency */ = {
+		413D2A7247AAE4D59EEE231E304B4813 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SendBirdSDK;
-			target = 3A49971F16C114258A534BEEE094303E /* SendBirdSDK */;
-			targetProxy = B352C2387AF3F12AFB6639DD22F9C5C4 /* PBXContainerItemProxy */;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = 59FBCE711732BF8E8718B6FB76B26089 /* PBXContainerItemProxy */;
 		};
-		8A986BE12D59CAF650FF6E0BAC7312BC /* PBXTargetDependency */ = {
+		6AA84D42EBDAB6468ED2689EEBFE7B6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SendBirdUIKit;
 			target = 89D97488C4F8726AB4F3C61EDD95CC56 /* SendBirdUIKit */;
-			targetProxy = 8789B9C32DB9510EB784FCC4B6330C80 /* PBXContainerItemProxy */;
+			targetProxy = 8BA1AE721CB7E033C4DF2FA1D39B9569 /* PBXContainerItemProxy */;
+		};
+		B92D54C5E3D81FA6A1BDFBD59A8E75CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SendBirdSDK;
+			target = 3A49971F16C114258A534BEEE094303E /* SendBirdSDK */;
+			targetProxy = F9A474679ED5D487FF52544864639C0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		009C9781087036A5F603336F6D345CCB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0F8CA1B321FB8EE082E15869DDF06D4 /* SendBirdUIKit.debug.xcconfig */;
+			baseConfigurationReference = 7505144BA7C8EAFF68A00EF9598DC4A3 /* SendBirdUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,7 +504,7 @@
 		};
 		135E876510B553BD9211EC7A7E6125E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 577A86AB9EB8CE4DD6827345D0A5FF30 /* SendBirdUIKit.release.xcconfig */;
+			baseConfigurationReference = 6A65E1E7187A57DCB7997D165C89062E /* SendBirdUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,7 +522,7 @@
 		};
 		24395F41012E456DB3856841E61040A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F4A7EBBE264F07BABE9EED2810AFFAD /* SendBirdSDK.debug.xcconfig */;
+			baseConfigurationReference = AE879BCD99B1E2C61A5D0D6059E81F47 /* SendBirdSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,7 +536,41 @@
 			};
 			name = Debug;
 		};
-		35F95C7920651D39D152FD786ACD0D1C /* Release */ = {
+		75015716975841C5EDFB269B50341487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B626A3EFB238A5DDAE6DD14637F21196 /* AppCenter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABF2C4BB66A59596BA89F58A00B82B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2854D68513C4BECDDC4F056F029262F /* SendBirdSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBFE94D51E862F6D65E619C1001D7A4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 531E8A1A78716CA30C5A1DCC7182737B /* Pods-takwira.release.xcconfig */;
 			buildSettings = {
@@ -451,23 +605,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ABF2C4BB66A59596BA89F58A00B82B8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E7F727011E8DA9BD81C6C425EAC267D /* SendBirdSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -537,43 +674,6 @@
 			};
 			name = Debug;
 		};
-		C1FA6093DF8CE031F767A6F43FC863A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90806F511665C42ECA048893747494B4 /* Pods-takwira.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-takwira/Pods-takwira-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-takwira/Pods-takwira.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -636,6 +736,59 @@
 			};
 			name = Release;
 		};
+		FA01AD04A7BCAA0D97EC6AD13881E90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90806F511665C42ECA048893747494B4 /* Pods-takwira.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-takwira/Pods-takwira-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-takwira/Pods-takwira.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEC95B7CD72F3B3708DC09E7E2EB397F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BE6B5286113C567BCC4945C076EE65 /* AppCenter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -648,11 +801,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA96EDA46D77752BAA6935369298D240 /* Build configuration list for PBXNativeTarget "Pods-takwira" */ = {
+		5242D03FC5C1EAA4F817066052F80607 /* Build configuration list for PBXAggregateTarget "AppCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1FA6093DF8CE031F767A6F43FC863A6 /* Debug */,
-				35F95C7920651D39D152FD786ACD0D1C /* Release */,
+				FEC95B7CD72F3B3708DC09E7E2EB397F /* Debug */,
+				75015716975841C5EDFB269B50341487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B883018DA7EEF9AB85AAAF1E4612DC1D /* Build configuration list for PBXNativeTarget "Pods-takwira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA01AD04A7BCAA0D97EC6AD13881E90B /* Debug */,
+				BBFE94D51E862F6D65E619C1001D7A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

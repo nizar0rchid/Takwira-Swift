@@ -1,20 +1,31 @@
 PODS:
+  - AppCenter (4.4.1):
+    - AppCenter/Analytics (= 4.4.1)
+    - AppCenter/Crashes (= 4.4.1)
+  - AppCenter/Analytics (4.4.1):
+    - AppCenter/Core
+  - AppCenter/Core (4.4.1)
+  - AppCenter/Crashes (4.4.1):
+    - AppCenter/Core
   - SendBirdSDK (3.1.1)
   - SendBirdUIKit (2.2.1):
     - SendBirdSDK (~> 3.1.1)
 
 DEPENDENCIES:
+  - AppCenter
   - SendBirdUIKit
 
 SPEC REPOS:
   trunk:
+    - AppCenter
     - SendBirdSDK
     - SendBirdUIKit
 
 SPEC CHECKSUMS:
+  AppCenter: b0b6f1190215b5f983c42934db718f3b46fff3c0
   SendBirdSDK: f698cf686d732889d79854756aba6bbc20062a00
   SendBirdUIKit: 19f911839f10908e58db91900d33b6758ad47744
 
-PODFILE CHECKSUM: 6c829181e41bf79d34b997ec8ff77158a4b57567
+PODFILE CHECKSUM: 1af70c863a34609d0b7d6f695269508258d0d6ed
 
 COCOAPODS: 1.11.2

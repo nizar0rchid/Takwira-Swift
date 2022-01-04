@@ -7,4 +7,5 @@ target 'takwira' do
 
   # Pods for takwira
 	pod 'SendBirdUIKit'
+  pod 'AppCenter'
 end
