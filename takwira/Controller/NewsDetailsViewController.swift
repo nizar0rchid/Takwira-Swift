@@ -46,7 +46,12 @@ class NewsDetailsViewController: UIViewController {
             awaygoals.text = String(sentAwaygoals!)
             elapsed.text = String(sentElapsed!)
             elapsedplus.text = String(sentElapsedplus!)
-            country.text = sentCountry!
+            if sentCountry == nil {
+                country.text = "Not available"
+            } else {
+                country.text = sentCountry!
+            }
+            
             league.text = sentLeague!
             if sentVenue == nil {
                 venue.text = "Not available"

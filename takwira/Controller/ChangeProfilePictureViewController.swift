@@ -52,7 +52,7 @@ class ChangeProfilePictureViewController: UIViewController, UIImagePickerControl
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if segue.identifier == "logoutafterpic" {
             let userid = UserDefaults.standard.value(forKey: "id") as! String?
-            var user = APIFunctions.shareInstance.finduserbyid(id: userid!)
+            let user = APIFunctions.shareInstance.finduserbyid(id: userid!)
             UserDefaults.standard.removeObject(forKey: "id")
             let destination = segue.destination as! LoginViewController
             destination.email = user.email!

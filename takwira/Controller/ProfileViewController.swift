@@ -69,7 +69,7 @@ class ProfileViewController: UIViewController {
             
             UserDefaults.standard.removeObject(forKey: "id")
         } else if segue.identifier == "changepic" {
-            let destination = segue.destination as! ChangeProfilePictureViewController
+            _ = segue.destination as! ChangeProfilePictureViewController
         }
     }
     

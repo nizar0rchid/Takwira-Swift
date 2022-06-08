@@ -34,16 +34,16 @@ class Lineup2ViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var team2 = sentmatch!.teamB!
+        let team2 = sentmatch!.teamB!
         
-        var filtered = team2.compactMap { $0 }
+        let filtered = team2.compactMap { $0 }
 
         
         var users = [userModel]()
         
         for iduser in filtered {
             
-            var userprofile = APIFunctions.shareInstance.finduserbyid(id: iduser )
+            let userprofile = APIFunctions.shareInstance.finduserbyid(id: iduser )
                 
                 users.append(userprofile)
             
@@ -109,7 +109,7 @@ class Lineup2ViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBAction func joinaction(_ sender: Any) {
         let team2 = sentmatch!.teamB!
         
-        let filtered = team2.compactMap { $0 }
+        _ = team2.compactMap { $0 }
         let userid = UserDefaults.standard.value(forKey: "id") as! String?
         
         

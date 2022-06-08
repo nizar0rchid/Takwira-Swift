@@ -20,7 +20,7 @@ class MatchAPI {
     
     func addStade(name: String, capacity: Int, price: Float, location: String, phone: String, datetime: String) -> String{
         var status: String?
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "name="+name+"&capacity="+String(capacity)+"&price="+String(price)+"&location="+location+"&phone="+phone+"&DateTime="+datetime
         let postData =  parameters.data(using: .utf8)
@@ -72,7 +72,7 @@ class MatchAPI {
     }
     
     func autojoinmatch(teamcapacity: Int, stadeId: String, userId: String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "teamCapacity="+String(teamcapacity)+"&stadeId="+stadeId+"&userId="+userId
         let postData =  parameters.data(using: .utf8)
@@ -101,7 +101,7 @@ class MatchAPI {
     func getStades() -> Array<StadeModel>{
         var matches = [StadeModel]()
 
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
@@ -136,7 +136,7 @@ class MatchAPI {
     
    
     func findmatchwithstadeid(stadeid: String)-> MatchModel {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
         var match = MatchModel()
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
@@ -169,7 +169,7 @@ class MatchAPI {
     
     
     func canceljointeamA(userid: String, matchid: String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "userId="+userid+"&team=teamA"
         let postData =  parameters.data(using: .utf8)
@@ -181,7 +181,7 @@ class MatchAPI {
         request.httpBody = postData
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          guard let data = data else {
+            guard data != nil else {
             print(String(describing: error))
             semaphore.signal()
             return
@@ -196,7 +196,7 @@ class MatchAPI {
     
     
     func jointeamA(userid: String, matchid: String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "userId="+userid+"&team=teamA"
         let postData =  parameters.data(using: .utf8)
@@ -208,7 +208,7 @@ class MatchAPI {
         request.httpBody = postData
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          guard let data = data else {
+            guard data != nil else {
             print(String(describing: error))
             semaphore.signal()
             return
@@ -224,7 +224,7 @@ class MatchAPI {
     
     
     func jointeamB(userid: String, matchid: String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "userId="+userid+"&team=teamB"
         let postData =  parameters.data(using: .utf8)
@@ -236,7 +236,7 @@ class MatchAPI {
         request.httpBody = postData
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          guard let data = data else {
+            guard data != nil else {
             print(String(describing: error))
             semaphore.signal()
             return
@@ -251,7 +251,7 @@ class MatchAPI {
     
     
     func canceljointeamB(userid: String, matchid: String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "userId="+userid+"&team=teamB"
         let postData =  parameters.data(using: .utf8)
@@ -263,7 +263,7 @@ class MatchAPI {
         request.httpBody = postData
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          guard let data = data else {
+            guard data != nil else {
             print(String(describing: error))
             semaphore.signal()
             return
@@ -281,7 +281,7 @@ class MatchAPI {
     func getallmatches() -> Array<MatchModel> {
         var matches = [MatchModel]()
 
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
@@ -316,7 +316,7 @@ class MatchAPI {
     
     func getstadebyid(stadeid: String) -> StadeModel {
         
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
         var stade = StadeModel()
         let parameters = ""
         let postData =  parameters.data(using: .utf8)

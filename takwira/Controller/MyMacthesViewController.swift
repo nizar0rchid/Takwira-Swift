@@ -9,12 +9,12 @@ import UIKit
 
 class MyMacthesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var mystades = getmymatches()
+        let mystades = getmymatches()
         return mystades.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var stades = getmymatches()
+        let stades = getmymatches()
         let cell = tableView.dequeueReusableCell(withIdentifier: "nCell")
         let cv = cell?.contentView
         let stadename = cv?.viewWithTag(1) as! UILabel
@@ -26,10 +26,10 @@ class MyMacthesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mymatch" {
-            var stades = getmymatches()
+            let stades = getmymatches()
             let indexPath = sender as! IndexPath
             let destination = segue.destination as! MatchDetailsViewController
-            var stade = stades [indexPath.row]
+            let stade = stades [indexPath.row]
             destination.stadeid = stade._id
             destination.sentname = stade.name
             destination.sentdatetime = stade.DateTime
@@ -57,7 +57,7 @@ class MyMacthesViewController: UIViewController, UITableViewDelegate, UITableVie
             let secondVC = storyboard?.instantiateViewController(withIdentifier: "nointernet") as! NoInternetViewController
             self.present(secondVC, animated:true, completion:nil)
         } else {
-            var mystades = getmymatches()
+            _ = getmymatches()
         }
        
         
@@ -67,10 +67,10 @@ class MyMacthesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func getmymatches() -> Array<StadeModel> {
-        var mymatches = [MatchModel]()
-        var matches = MatchAPI.shareInstance.getallmatches()
+        _ = [MatchModel]()
+        let matches = MatchAPI.shareInstance.getallmatches()
         
-        var stades = MatchAPI.shareInstance.getStades()
+        _ = MatchAPI.shareInstance.getStades()
         
         let userid = UserDefaults.standard.value(forKey: "id") as! String?
         

@@ -43,7 +43,7 @@ class MatchDetailsViewController: UIViewController {
             let stringprice = String(sentprice!)
             price.text! = stringprice+" per person"
             location.text! = sentlocation!
-            phone.text! = sentphone!
+            //phone.text! = sentphone!
             let image = sentimage!.components(separatedBy: "upload\\images\\")[1]
             let url = URL(string: HOST+"/"+image)
             let data = try? Data(contentsOf: url!)

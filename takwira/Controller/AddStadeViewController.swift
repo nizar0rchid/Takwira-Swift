@@ -57,7 +57,7 @@ class AddStadeViewController: UIViewController {
             if status != "" {
                 
                 let capacity = Int(capacityTF.text!)
-                var userid = UserDefaults.standard.value(forKey: "id") as! String?
+                let userid = UserDefaults.standard.value(forKey: "id") as! String?
                 MatchAPI.shareInstance.autojoinmatch(teamcapacity: capacity!/2, stadeId: status!, userId: userid!)
                 
                 
@@ -73,7 +73,7 @@ class AddStadeViewController: UIViewController {
                 SBUGlobals.CurrentUser = SBUUser(userId: user._id!, nickname: nickname, profileUrl: url)
                 
                 SBUMain.connect { (user, error) in
-                    guard let user = user else {
+                    guard user != nil else {
                         // The user is offline and you can't access any user information stored in the local cache.
                         return
                     }
@@ -89,8 +89,8 @@ class AddStadeViewController: UIViewController {
                 
                 
                 
-                var params = SBDGroupChannelParams()
-                var users: [String] = []
+                let params = SBDGroupChannelParams()
+                let users: [String] = []
                 params.isPublic = true
                 params.isEphemeral = false
                 params.isDistinct = false
@@ -112,7 +112,7 @@ class AddStadeViewController: UIViewController {
                     // A group channel with detailed configuration is successfully created.
                     // By using groupChannel.channelUrl, groupChannel.members, groupChannel.data, groupChannel.customType, and so on,
                     // you can access the result object from Sendbird server to check your SBDGroupChannelParams configuration.
-                    let channelUrl = groupChannel?.channelUrl
+                    _ = groupChannel?.channelUrl
                    
                 })
                 

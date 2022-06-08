@@ -8,4 +8,4 @@
 import Foundation
 
 
-var HOST = "http://192.168.137.62:3000"
+var HOST = "https://takwira-backend.herokuapp.com"

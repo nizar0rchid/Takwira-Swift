@@ -31,7 +31,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if segue.identifier == "livematchdetail" {
             let indexPath = sender as! IndexPath
             let destination = segue.destination as! NewsDetailsViewController
-            var match = matches [indexPath.row]
+            let match = matches [indexPath.row]
             destination.sentHome = match.homeName
             destination.sentAway = match.awayName
             destination.sentVenue = match.venue

@@ -52,8 +52,8 @@ class StadePictureViewController: UIViewController, UIImagePickerControllerDeleg
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "savestade" {
-            var id = UserDefaults.standard.value(forKey: "id") as! String?
-            var user = APIFunctions.shareInstance.finduserbyid(id: id!)
+            let id = UserDefaults.standard.value(forKey: "id") as! String?
+            let user = APIFunctions.shareInstance.finduserbyid(id: id!)
             let custMainVC = segue.destination as! UITabBarController
             let profileController = custMainVC.viewControllers!.last as! ProfileViewController
             profileController.sentName = user.firstName!+" "+user.lastName!

@@ -24,17 +24,17 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var match = MatchAPI.shareInstance.findmatchwithstadeid(stadeid: sentstadeid!)
-        var team1 = match.teamA!
+        let match = MatchAPI.shareInstance.findmatchwithstadeid(stadeid: sentstadeid!)
+        let team1 = match.teamA!
         
-        var filtered = team1.compactMap { $0 }
+        let filtered = team1.compactMap { $0 }
 
         
         var users = [userModel]()
         
         for iduser in filtered {
             
-            var userprofile = APIFunctions.shareInstance.finduserbyid(id: iduser )
+            let userprofile = APIFunctions.shareInstance.finduserbyid(id: iduser )
                 
                 users.append(userprofile)
             
@@ -96,7 +96,7 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
         SBUGlobals.CurrentUser = SBUUser(userId: user._id!, nickname: nickname, profileUrl: url)
         
         SBUMain.connect { (user, error) in
-            guard let user = user else {
+            guard user != nil else {
                 // The user is offline and you can't access any user information stored in the local cache.
                 return
             }
@@ -182,7 +182,7 @@ class Lineup1ViewController: UIViewController, UITableViewDelegate, UITableViewD
         let match = MatchAPI.shareInstance.findmatchwithstadeid(stadeid: sentstadeid!)
         let team1 = match.teamA!
         
-        let filtered = team1.compactMap { $0 }
+        _ = team1.compactMap { $0 }
         let userid = UserDefaults.standard.value(forKey: "id") as! String?
         
         for id in team1 {

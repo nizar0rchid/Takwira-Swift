@@ -19,7 +19,7 @@ class APIFunctions {
     
     func checkinternet() -> Int {
         var connectionstatus: Int = 0
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
@@ -29,7 +29,7 @@ class APIFunctions {
         request.httpBody = postData
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          guard let data = data else {
+            guard data != nil else {
             print(String(describing: error))
             semaphore.signal()
             return
@@ -53,7 +53,7 @@ class APIFunctions {
     func Register(user : userModel) -> Int{
         
         var status: Int = 0;
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let param1 = "firstName="+user.firstName!+"&lastName="+user.lastName!+"&email="+user.email!
         let param2 = "&password="+user.password!+"&age="+String(user.age!)
@@ -69,7 +69,7 @@ class APIFunctions {
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             
-          guard let data = data else {
+            guard data != nil else {
             
             print(String(describing: error))
             semaphore.signal()
@@ -91,7 +91,7 @@ class APIFunctions {
         
         var user = userModel()
         
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "email="+email+"&password="+password
         let postData =  parameters.data(using: .utf8)
@@ -128,7 +128,7 @@ class APIFunctions {
     
     //// update profile
     func updateProfile(_id : String, firstname: String, lastname: String, email: String, age: Int, phone: String, location: String, password: String, role : String) {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
         
         let param1 = "firstName="+firstname+"&lastName="+lastname+"&email="+email
         let param2 = "&password="+password+"&age="+String(age)
@@ -161,7 +161,7 @@ class APIFunctions {
     ///// get live matches
     func liveMatches() -> Array<liveMatchModel> {
         var matches = [liveMatchModel]()
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
@@ -195,7 +195,7 @@ class APIFunctions {
     
     
     func finduserbyid(id : String) -> userModel {
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
         var user = userModel()
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
@@ -232,7 +232,7 @@ class APIFunctions {
     
     func findbyemail(email : String) -> userModel {
         
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
         var user = userModel()
         let parameters = ""
         let postData =  parameters.data(using: .utf8)
