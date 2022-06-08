@@ -913,8 +913,8 @@
                                     <outlet property="delegate" destination="EPh-kF-c7P" id="Hho-1W-1vX"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-GQ-TeW">
-                                <rect key="frame" x="149" y="299" width="115" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-GQ-TeW">
+                                <rect key="frame" x="150" y="299" width="114" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="88r-B4-2Xg"/>
                                 </constraints>
@@ -2162,7 +2162,7 @@
         <segue reference="Ynf-51-uGD"/>
         <segue reference="8Kk-6H-yl6"/>
         <segue reference="AnZ-Zx-hzI"/>
-        <segue reference="Qsx-5e-teU"/>
+        <segue reference="uJp-Mv-ud9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Frame 3230" width="115" height="46"/>
